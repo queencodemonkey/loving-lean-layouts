@@ -51,6 +51,6 @@ public class HierarchyViewerActivity extends AppCompatActivity {
         final Toolbar toolbar = ButterKnife.findById(this, R.id.app_bar);
         setSupportActionBar(toolbar);
 
-        statusTextView.setText(R.string.status_bar_message_sample);
+        statusTextView.setText(R.string.hierarchy_viewer_status_bar_message_sample);
     }
 }

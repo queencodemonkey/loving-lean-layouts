@@ -28,8 +28,9 @@
     <string name="example_attributes">Using Attributes</string>
     <string name="example_simple_views">Simple Views</string>
 
-    <!-- Status bar -->
-    <string name="status_bar_message_sample">Last Week\'s Topic: Photos That Make You Hungry</string>
+    <!-- Hierarchy Viewer -->
+    <string name="hierarchy_viewer_attribution_unsplash">Pictures from Unsplash</string>
+    <string name="hierarchy_viewer_status_bar_message_sample">Last Week\'s Topic: Photos That Make You Hungry</string>
     <string name="hierarchy_viewer_sample_text_01">Fruit</string>
     <string name="hierarchy_viewer_sample_text_02">Pastries</string>
     <string name="hierarchy_viewer_sample_text_03">Almonds</string>
