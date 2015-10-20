@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2015 Randomly Typing LLC
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_card_view_padding">-8dp</dimen>
+
+    <!-- List metrics -->
+    <dimen name="list_subheader_height_min">48dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_text_margin_left">12dp</dimen>
+    <dimen name="list_item_padding_vertical">8dp</dimen>
+    <dimen name="list_item_drawable_padding">20dp</dimen>
+
+    <!-- List metrics: example list -->
+    <dimen name="list_item_example_height_min">56dp</dimen>
+
+    <!-- Grid metrics -->
+    <dimen name="grid_spacing">8dp</dimen>
+
+    <!-- Hierarchy Viewer Example -->
+    <dimen name="hierarchy_viewer_image_height">160dp</dimen>
+    <dimen name="hierarchy_viewer_text_margin_vertical">16dp</dimen>
+
+</resources>
