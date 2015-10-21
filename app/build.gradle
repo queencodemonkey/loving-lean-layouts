@@ -16,7 +16,7 @@ android {
 
     defaultConfig {
         applicationId "com.randomlytyping.lovingleanlayouts"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 23
 
         versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
