@@ -34,7 +34,7 @@ public class SimpleViewsActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hierarchy_viewer);
+        setContentView(R.layout.activity_simple_views);
         AppCompatActivitySetup.with(this)
                 .supportAppBar(R.id.app_bar)
                 .upButton();
