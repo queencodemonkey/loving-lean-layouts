@@ -25,7 +25,7 @@
     <!-- List metrics -->
     <dimen name="list_subheader_height_min">48dp</dimen>
     <dimen name="list_item_spacing">16dp</dimen>
-    <dimen name="list_item_text_margin_left">12dp</dimen>
+    <dimen name="list_item_text_margin_start">12dp</dimen>
     <dimen name="list_item_padding_vertical">8dp</dimen>
     <dimen name="list_item_drawable_padding">20dp</dimen>
 
