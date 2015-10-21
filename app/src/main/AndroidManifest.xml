@@ -32,15 +32,18 @@
 
         <activity
             android:name=".ui.HierarchyViewerActivity"
-            android:label="@string/activity_title_hierarchy_viewer" />
+            android:label="@string/activity_title_hierarchy_viewer"
+            android:parentActivityName=".ui.MainActivity" />
 
         <activity
             android:name=".ui.AttributesActivity"
-            android:label="@string/activity_title_attributes" />
+            android:label="@string/activity_title_attributes"
+            android:parentActivityName=".ui.MainActivity"  />
 
         <activity
             android:name=".ui.SimpleViewsActivity"
-            android:label="@string/activity_title_simple_views" />
+            android:label="@string/activity_title_simple_views"
+            android:parentActivityName=".ui.MainActivity"  />
     </application>
 
 </manifest>

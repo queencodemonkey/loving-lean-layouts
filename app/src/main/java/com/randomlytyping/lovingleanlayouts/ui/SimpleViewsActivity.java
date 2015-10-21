@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.randomlytyping.lovingleanlayouts.R;
+import com.randomlytyping.util.AppCompatActivitySetup;
 import com.randomlytyping.util.AppCompatUtil;
 
 /**
@@ -34,6 +35,8 @@ public class SimpleViewsActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hierarchy_viewer);
-        AppCompatUtil.setToolbarAppBar(this, R.id.app_bar);
+        AppCompatActivitySetup.with(this)
+                .supportAppBar(R.id.app_bar)
+                .upButton();
     }
 }

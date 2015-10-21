@@ -32,6 +32,7 @@ import android.widget.TextView;
 
 import com.randomlytyping.lovingleanlayouts.Intents;
 import com.randomlytyping.lovingleanlayouts.R;
+import com.randomlytyping.util.AppCompatActivitySetup;
 import com.randomlytyping.util.AppCompatUtil;
 
 import butterknife.ButterKnife;
@@ -45,8 +46,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        AppCompatUtil.setToolbarAppBar(this, R.id.app_bar);
+        AppCompatActivitySetup.with(this).supportAppBar(R.id.app_bar);
 
         final RecyclerView exampleList = ButterKnife.findById(this, R.id.example_list);
         exampleList.setLayoutManager(new LinearLayoutManager(this));
@@ -136,6 +136,7 @@ public class MainActivity extends BaseActivity {
         }
 
         void setExample(Example example) {
+            this.example = example;
             textView.setCompoundDrawablesWithIntrinsicBounds(example.iconResId, 0, 0, 0);
             textView.setText(example.stringResId);
         }

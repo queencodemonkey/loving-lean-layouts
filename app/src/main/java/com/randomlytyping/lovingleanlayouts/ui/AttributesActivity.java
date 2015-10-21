@@ -19,6 +19,7 @@ package com.randomlytyping.lovingleanlayouts.ui;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.randomlytyping.util.AppCompatActivitySetup;
 import com.randomlytyping.util.AppCompatUtil;
 import com.randomlytyping.lovingleanlayouts.R;
 
@@ -34,6 +35,8 @@ public class AttributesActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attributes);
-        AppCompatUtil.setToolbarAppBar(this, R.id.app_bar);
+        AppCompatActivitySetup.with(this)
+                .supportAppBar(R.id.app_bar)
+                .upButton();
     }
 }

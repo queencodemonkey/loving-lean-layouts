@@ -17,6 +17,7 @@
 package com.randomlytyping.util;
 
 import android.support.annotation.IdRes;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -41,5 +42,14 @@ public class AppCompatUtil {
         }
         activity.setSupportActionBar(toolbar);
         return true;
+    }
+
+    public static void enableUpButton(AppCompatActivity activity) {
+        final ActionBar actionBar = activity.getSupportActionBar();
+        if (actionBar == null) {
+            return;
+        }
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 }
