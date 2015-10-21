@@ -15,6 +15,9 @@
   limitations under the License.
   -->
 <resources>
-    <!-- Merriweather fonts -->
+    <!-- Merriweather -->
     <string name="font_path_merriweather_black">fonts/merriweather/Merriweather-Black.ttf</string>
+
+    <!-- Fira Mono fonts -->
+    <string name="font_path_fira_mono_bold">fonts/firamono/FiraMono-Bold.ttf</string>
 </resources>
