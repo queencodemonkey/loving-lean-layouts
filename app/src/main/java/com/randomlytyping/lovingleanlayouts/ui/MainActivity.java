@@ -36,7 +36,7 @@ import com.randomlytyping.util.AppCompatUtil;
 
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     //
     // Activity lifecycle
     //

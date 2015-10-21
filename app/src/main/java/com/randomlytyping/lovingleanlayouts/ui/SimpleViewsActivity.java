@@ -25,7 +25,7 @@ import com.randomlytyping.util.AppCompatUtil;
 /**
  * @since 2015.10.19
  */
-public class SimpleViewsActivity extends AppCompatActivity {
+public class SimpleViewsActivity extends BaseActivity {
     //
     // Activity lifecycle
     //

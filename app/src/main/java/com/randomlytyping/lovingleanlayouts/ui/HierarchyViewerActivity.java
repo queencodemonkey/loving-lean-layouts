@@ -30,7 +30,7 @@ import butterknife.ButterKnife;
 /**
  * @since 2015.10.18
  */
-public class HierarchyViewerActivity extends AppCompatActivity {
+public class HierarchyViewerActivity extends BaseActivity {
     //
     // Fields
     //

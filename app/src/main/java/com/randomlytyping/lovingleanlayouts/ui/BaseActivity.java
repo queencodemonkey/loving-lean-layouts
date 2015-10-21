@@ -16,24 +16,21 @@
 
 package com.randomlytyping.lovingleanlayouts.ui;
 
-import android.os.Bundle;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 
-import com.randomlytyping.util.AppCompatUtil;
-import com.randomlytyping.lovingleanlayouts.R;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
- * @since 2015.10.19
+ * @since 2015.10.20
  */
-public class AttributesActivity extends BaseActivity {
+public class BaseActivity extends AppCompatActivity {
     //
-    // Activity lifecycle
+    // ContextThemeWrapper overrides
     //
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_attributes);
-        AppCompatUtil.setToolbarAppBar(this, R.id.app_bar);
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 }

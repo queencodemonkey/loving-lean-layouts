@@ -2,7 +2,8 @@ apply plugin: 'com.android.application'
 
 ext.versions = [
         support: "23.1.0",
-        butterknife: "7.0.1"
+        butterknife: "7.0.1",
+        calligraphy: "2.1.0"
 ]
 
 def versionMajor = 0
@@ -33,8 +34,15 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
+    // Android
     compile "com.android.support:appcompat-v7:${versions.support}"
+    // Android: Widgets
     compile "com.android.support:recyclerview-v7:${versions.support}"
     compile "com.android.support:cardview-v7:${versions.support}"
+
+    // Utility
     compile "com.jakewharton:butterknife:${versions.butterknife}"
+
+    // UI
+    compile "uk.co.chrisjenx:calligraphy:${versions.calligraphy}"
 }
