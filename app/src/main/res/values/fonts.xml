@@ -15,9 +15,12 @@
   limitations under the License.
   -->
 <resources>
+    <!-- Actor -->
+    <string name="font_path_actor">fonts/actor/Actor-Regular.ttf</string>
+    <!-- Alegreya -->
+    <string name="font_path_alegreya">fonts/alegreya/Alegreya-Bold.ttf</string>
+    <!-- Fira Mono -->
+    <string name="font_path_fira_mono_bold">fonts/firamono/FiraMono-Bold.ttf</string>
     <!-- Merriweather -->
     <string name="font_path_merriweather_black">fonts/merriweather/Merriweather-Black.ttf</string>
-
-    <!-- Fira Mono fonts -->
-    <string name="font_path_fira_mono_bold">fonts/firamono/FiraMono-Bold.ttf</string>
 </resources>
