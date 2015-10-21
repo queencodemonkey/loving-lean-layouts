@@ -21,6 +21,7 @@ import android.content.Intent;
 
 import com.randomlytyping.lovingleanlayouts.ui.AttributesActivity;
 import com.randomlytyping.lovingleanlayouts.ui.HierarchyViewerActivity;
+import com.randomlytyping.lovingleanlayouts.ui.LearnFromLintActivity;
 import com.randomlytyping.lovingleanlayouts.ui.SimpleViewsActivity;
 
 /**
@@ -35,11 +36,16 @@ public class Intents {
         return new Intent(context, HierarchyViewerActivity.class);
     }
 
-    public static Intent newAttributeExamplesIntent(Context context) {
+    public static Intent newAttributesIntent(Context context) {
         return new Intent(context, AttributesActivity.class);
+    }
+
+    public static Intent newLearnFromLintIntent(Context context) {
+        return new Intent(context, LearnFromLintActivity.class);
     }
 
     public static Intent newSimpleViewExamplesIntent(Context context) {
         return new Intent(context, SimpleViewsActivity.class);
+
     }
 }
