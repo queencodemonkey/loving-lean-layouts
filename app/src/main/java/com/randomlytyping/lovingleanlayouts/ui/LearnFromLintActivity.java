@@ -17,14 +17,16 @@
 package com.randomlytyping.lovingleanlayouts.ui;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.randomlytyping.lovingleanlayouts.R;
 import com.randomlytyping.util.AppCompatActivitySetup;
+import com.randomlytyping.util.AppCompatUtil;
 
 /**
- * @since 2015.10.21
+ * @since 2015.10.19
  */
-public class SimpleViewsActivity extends BaseActivity {
+public class LearnFromLintActivity extends BaseActivity {
     //
     // Activity lifecycle
     //
@@ -32,7 +34,7 @@ public class SimpleViewsActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_simple_views);
+        setContentView(R.layout.activity_learn_from_lint);
         AppCompatActivitySetup.with(this)
                 .supportAppBar(R.id.app_bar)
                 .upButton();

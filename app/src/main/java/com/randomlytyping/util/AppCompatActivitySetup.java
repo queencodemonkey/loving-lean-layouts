@@ -50,7 +50,9 @@ public class AppCompatActivitySetup {
 
     public AppCompatActivitySetup supportAppBar(@IdRes int toolbarId) {
         mToolbar = (Toolbar) mActivity.findViewById(toolbarId);
-        mActivity.setSupportActionBar(mToolbar);
+        if (mToolbar != null) {
+            mActivity.setSupportActionBar(mToolbar);
+        }
         return this;
     }
 

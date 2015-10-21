@@ -41,6 +41,11 @@
             android:parentActivityName=".ui.MainActivity"  />
 
         <activity
+            android:name=".ui.LearnFromLintActivity"
+            android:label="@string/activity_title_simple_views"
+            android:parentActivityName=".ui.MainActivity"  />
+
+        <activity
             android:name=".ui.SimpleViewsActivity"
             android:label="@string/activity_title_simple_views"
             android:parentActivityName=".ui.MainActivity"  />

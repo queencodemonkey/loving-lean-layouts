@@ -72,12 +72,11 @@
             style="@style/TextAppearance.LLL.TimeWimey"
             tools:ignore="RtlHardcoded" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="@dimen/view_attributes_card_spacing"
-            android:layout_marginBottom="@dimen/view_attributes_card_spacing"
-            android:background="@drawable/shape_divider_default" />
+        <include layout="@layout/divider_default"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:layout_marginTop="@dimen/view_attributes_card_spacing"
+                 android:layout_marginBottom="@dimen/view_attributes_card_spacing" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -151,13 +150,11 @@
 
         </RelativeLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="@dimen/view_attributes_card_spacing"
-            android:layout_marginBottom="@dimen/view_attributes_card_spacing"
-            android:background="@drawable/shape_divider_default" />
-
+        <include layout="@layout/divider_default"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:layout_marginTop="@dimen/view_attributes_card_spacing"
+                 android:layout_marginBottom="@dimen/view_attributes_card_spacing" />
 
         <FrameLayout
             android:layout_width="@dimen/view_attributes_background_square_width"

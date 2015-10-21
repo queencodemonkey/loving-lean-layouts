@@ -21,10 +21,8 @@ import android.os.Bundle;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.IdRes;
 import android.support.annotation.StringRes;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +31,6 @@ import android.widget.TextView;
 import com.randomlytyping.lovingleanlayouts.Intents;
 import com.randomlytyping.lovingleanlayouts.R;
 import com.randomlytyping.util.AppCompatActivitySetup;
-import com.randomlytyping.util.AppCompatUtil;
 
 import butterknife.ButterKnife;
 
@@ -62,8 +59,8 @@ public class MainActivity extends BaseActivity {
                 R.string.example_hierarchy_viewer),
         ATTRIBUTES(R.id.example_attributes, R.drawable.ic_view_quilt_white_36dp,
                 R.string.example_attributes),
-        SIMPLE_VIEWS(R.id.example_simple_views, R.drawable.ic_view_quilt_white_36dp,
-                R.string.example_simple_views);
+        LEARN_FROM_LINT(R.id.example_learn_from_lint, R.drawable.ic_view_quilt_white_36dp,
+                R.string.example_learn_from_lint);
 
         //
         // Fields
@@ -96,7 +93,7 @@ public class MainActivity extends BaseActivity {
                 case 1:
                     return ATTRIBUTES;
                 case 2:
-                    return SIMPLE_VIEWS;
+                    return LEARN_FROM_LINT;
                 default:
                     return HIERARCHY_VIEW;
             }
@@ -153,10 +150,10 @@ public class MainActivity extends BaseActivity {
                     startActivity(Intents.newHierarchyViewerIntent(context));
                     break;
                 case ATTRIBUTES:
-                    startActivity(Intents.newAttributeExamplesIntent(context));
+                    startActivity(Intents.newAttributesIntent(context));
                     break;
-                case SIMPLE_VIEWS:
-                    startActivity(Intents.newSimpleViewExamplesIntent(context));
+                case LEARN_FROM_LINT:
+                    startActivity(Intents.newLearnFromLintIntent(context));
                     break;
             }
         }

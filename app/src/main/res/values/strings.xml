@@ -21,12 +21,13 @@
     <string name="activity_title_hierarchy_viewer">What\'s All This Then?</string>
     <string name="activity_title_attributes">Use What You Got</string>
     <string name="activity_title_simple_views">Simple Pleasures</string>
+    <string name="activity_title_learn_from_lint">Learning from Lint</string>
 
     <!-- Examples -->
     <string name="example_list_subheader">Examples</string>
     <string name="example_hierarchy_viewer">Hierarchy Viewer</string>
     <string name="example_attributes">Using Attributes</string>
-    <string name="example_simple_views">Simple Views</string>
+    <string name="example_learn_from_lint">Learn from Lint</string>
 
     <!-- Hierarchy Viewer -->
     <string name="hierarchy_viewer_attribution_unsplash">Pictures from Unsplash</string>
@@ -42,4 +43,14 @@
     <string name="view_attributes_complex">non-linear</string>
     <string name="view_attributes_simple">non-subjective</string>
 
+    <!-- Learn from Lint -->
+    <string name="lint_useless_parent">Single View in a LinearLayout</string>
+    <string name="lint_useless_leaf_01">LinearLayout as a gap</string>
+    <string name="lint_useless_leaf_02">Space widget</string>
+    <string name="lint_nested_weights_01">Nested</string>
+    <string name="lint_nested_weights_02">weights</string>
+    <string name="lint_nested_weights_03">are</string>
+    <string name="lint_nested_weights_04">not</string>
+    <string name="lint_nested_weights_05">good!</string>
+    <string name="lint_nested_layouts">Lottsa Layouts</string>
 </resources>

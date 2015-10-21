@@ -25,16 +25,31 @@
     </style>
 
     <!-- Text styles -->
-    <style name="TextAppearance.LLL.TimeWimey" parent="TextAppearance.AppCompat.Headline">
+    <style name="TextAppearance.LLL" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.LLL.TimeWimey">
         <item name="android:textStyle">bold</item>
         <item name="fontPath">@string/font_path_merriweather_black</item>
     </style>
 
-    <style name="TextAppearance.LLL.CauseEffect" parent="TextAppearance.AppCompat.Headline">
+    <style name="TextAppearance.LLL.CauseEffect">
         <item name="android:typeface">monospace</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="fontPath">@string/font_path_fira_mono_bold</item>
+    </style>
+
+    <style name="TextAppearance.LLL.Lint">
+        <item name="fontPath">@string/font_path_actor</item>
+    </style>
+
+    <style name="TextAppearance.LLL.LintBody" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontPath">@string/font_path_actor</item>
+    </style>
+
+    <style name="TextAppearance.LLL.NestedWeights" parent="TextAppearance.AppCompat.Headline">
+        <item name="fontPath">@string/font_path_alegreya</item>
     </style>
 
     <!-- Widget styles -->
