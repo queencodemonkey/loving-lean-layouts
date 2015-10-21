@@ -14,15 +14,178 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:paddingStart="@dimen/activity_horizontal_margin"
-              android:paddingEnd="@dimen/activity_horizontal_margin">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:context=".ui.AttributesActivity">
 
-    <!-- App bar -->
-    <include layout="@layout/app_bar_default" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/shape_divider_default">
 
-</LinearLayout>
+        <!-- App bar -->
+        <include layout="@layout/app_bar_default" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_attributes_text_icon_margin_horizontal"
+            android:layout_marginEnd="@dimen/view_attributes_text_icon_margin_horizontal"
+            android:layout_marginTop="@dimen/view_attributes_padding_top"
+            android:layout_marginBottom="0dp"
+            android:gravity="start|center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="@dimen/view_attributes_icon_spacing"
+                android:src="@drawable/ic_tardis_white_48dp"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/view_attributes_icon_spacing"
+                android:text="@string/view_attributes_text_01"
+                style="@style/TextAppearance.LLL.TimeWimey"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_attributes_text_icon_margin_horizontal"
+            android:layout_marginEnd="@dimen/view_attributes_text_icon_margin_horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="0dp"
+            android:drawablePadding="@dimen/view_attributes_icon_spacing"
+            android:drawableEnd="@drawable/ic_tardis_white_48dp"
+            android:text="@string/view_attributes_text_02"
+            android:gravity="end|center"
+            style="@style/TextAppearance.LLL.TimeWimey"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/view_attributes_card_spacing"
+            android:layout_marginBottom="@dimen/view_attributes_card_spacing"
+            android:background="@drawable/shape_divider_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="@dimen/view_attributes_card_spacing"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/view_attributes_icon_spacing"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_left_white_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_white_24dp"
+            android:drawableTop="@drawable/ic_keyboard_arrow_up_white_24dp"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_down_white_24dp"
+            android:text="@string/view_attributes_complex"
+            style="@style/TextAppearance.LLL.CauseEffect"
+            tools:ignore="RtlHardcoded" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:id="@+id/top_chevron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="@dimen/view_attributes_icon_spacing"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_keyboard_arrow_up_white_24dp" />
+
+            <TextView
+                android:id="@+id/text_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/top_chevron"
+                android:text="@string/view_attributes_simple"
+                style="@style/TextAppearance.LLL.CauseEffect" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/text_03"
+                android:layout_marginTop="@dimen/view_attributes_icon_spacing"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_keyboard_arrow_down_white_24dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/text_03"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="@dimen/view_attributes_icon_spacing"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_keyboard_arrow_left_white_24dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text_03"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_attributes_icon_spacing"
+                android:layout_marginRight="0dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/view_attributes_card_spacing"
+            android:layout_marginBottom="@dimen/view_attributes_card_spacing"
+            android:background="@drawable/shape_divider_default" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_attributes_card_spacing"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/bitmap_pattern_lodyas">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_attributes_card_spacing"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/bitmap_pattern_lodyas">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

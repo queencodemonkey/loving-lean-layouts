@@ -39,4 +39,10 @@
     <dimen name="hierarchy_viewer_image_height">160dp</dimen>
     <dimen name="hierarchy_viewer_text_margin_vertical">16dp</dimen>
 
+    <!-- View Attributes Example -->
+    <dimen name="view_attributes_padding_top">24dp</dimen>
+    <dimen name="view_attributes_text_icon_margin_horizontal">4dp</dimen>
+    <dimen name="view_attributes_card_spacing">24dp</dimen>
+    <dimen name="view_attributes_icon_spacing">8dp</dimen>
+
 </resources>

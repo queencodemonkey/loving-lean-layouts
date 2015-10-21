@@ -24,6 +24,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Text styles -->
+    <style name="TextAppearance.LLL.TimeWimey" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textStyle">bold</item>
+        <item name="fontPath">@string/font_path_merriweather_black</item>
+    </style>
+
+    <style name="TextAppearance.LLL.CauseEffect" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="fontPath">@string/font_path_fira_mono_bold</item>
+    </style>
+
     <!-- Widget styles -->
     <!-- CardView styles -->
     <style name="CardViewToolbar">

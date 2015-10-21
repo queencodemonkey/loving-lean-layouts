@@ -19,8 +19,8 @@
     <!-- Titles -->
     <string name="app_name">Loving Lean Layouts</string>
     <string name="activity_title_hierarchy_viewer">What\'s All This Then?</string>
-    <string name="activity_title_attributes">Simplify | Consolidate | Win</string>
-    <string name="activity_title_simple_views">Sometimes You Just Need a New View</string>
+    <string name="activity_title_attributes">Use What You Got</string>
+    <string name="activity_title_simple_views">Simple Pleasures</string>
 
     <!-- Examples -->
     <string name="example_list_subheader">Examples</string>
@@ -35,5 +35,11 @@
     <string name="hierarchy_viewer_sample_text_02">Pastries</string>
     <string name="hierarchy_viewer_sample_text_03">Almonds</string>
     <string name="hierarchy_viewer_sample_text_04">Lemonade</string>
+
+    <!-- View Attributes -->
+    <string name="view_attributes_text_01">Wibbly wobbly…</string>
+    <string name="view_attributes_text_02">Timey wimey…</string>
+    <string name="view_attributes_complex">non-linear</string>
+    <string name="view_attributes_simple">non-subjective</string>
 
 </resources>
