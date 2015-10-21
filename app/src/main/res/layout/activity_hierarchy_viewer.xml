@@ -94,7 +94,7 @@
                         android:src="@drawable/ic_camera_white_48dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginEnd="8dp"
-                        android:contentDescription="@null"/>
+                        android:contentDescription="@null" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -125,7 +125,8 @@
                         android:layout_marginStart="0dp"
                         android:layout_marginEnd="@dimen/grid_spacing"
                         android:src="@drawable/unsplash_lemonade_spicy"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@null" />
 
                     <ImageView
                         android:id="@+id/row02_end_image"
@@ -133,7 +134,8 @@
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="1"
                         android:src="@drawable/unsplash_cookies_almond"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@null" />
 
                 </LinearLayout>
 
@@ -153,7 +155,8 @@
                         android:layout_marginStart="0dp"
                         android:layout_marginEnd="@dimen/grid_spacing"
                         android:src="@drawable/unsplash_cookies_almond"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@null" />
 
                     <LinearLayout
                         android:orientation="vertical"
@@ -179,7 +182,7 @@
                             android:layout_marginBottom="0dp"
                             android:text="@string/hierarchy_viewer_sample_text_02"
                             android:textAllCaps="true"
-                            style="@style/TextAppearance.AppCompat.Body1"  />
+                            style="@style/TextAppearance.AppCompat.Body1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -188,7 +191,7 @@
                             android:layout_marginBottom="0dp"
                             android:text="@string/hierarchy_viewer_sample_text_03"
                             android:textStyle="italic"
-                            style="@style/TextAppearance.AppCompat.Body1"  />
+                            style="@style/TextAppearance.AppCompat.Body1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -197,7 +200,7 @@
                             android:layout_marginBottom="0dp"
                             android:text="@string/hierarchy_viewer_sample_text_04"
                             android:textAllCaps="true"
-                            style="@style/TextAppearance.AppCompat.Body1"  />
+                            style="@style/TextAppearance.AppCompat.Body1" />
 
                     </LinearLayout>
 
@@ -207,7 +210,8 @@
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="1"
                         android:src="@drawable/unsplash_peppers_garlic"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@null" />
 
                 </LinearLayout>
 
@@ -227,7 +231,8 @@
                         android:layout_marginStart="0dp"
                         android:layout_marginEnd="@dimen/grid_spacing"
                         android:src="@drawable/unsplash_berries_plate"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@null" />
 
                     <ImageView
                         android:id="@+id/row04_center_image"
@@ -237,7 +242,8 @@
                         android:layout_marginStart="0dp"
                         android:layout_marginEnd="@dimen/grid_spacing"
                         android:src="@drawable/unsplash_grapes_purple"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@null" />
 
                     <ImageView
                         android:id="@+id/row04_end_image"
@@ -245,7 +251,8 @@
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="1"
                         android:src="@drawable/unsplash_creme_brulee"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@null" />
 
                 </LinearLayout>
 
