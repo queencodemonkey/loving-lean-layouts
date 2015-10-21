@@ -25,7 +25,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@drawable/shape_divider_default">
+        android:gravity="center_horizontal|top">
 
         <!-- App bar -->
         <include layout="@layout/app_bar_default" />
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/view_attributes_text_icon_margin_horizontal"
             android:layout_marginEnd="@dimen/view_attributes_text_icon_margin_horizontal"
-            android:layout_marginTop="@dimen/view_attributes_padding_top"
+            android:layout_marginTop="@dimen/view_attributes_padding_bottom"
             android:layout_marginBottom="0dp"
             android:gravity="start|center_vertical">
 
@@ -160,16 +160,43 @@
 
 
         <FrameLayout
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/view_attributes_background_square_width"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/view_attributes_card_spacing"
             android:layout_marginBottom="0dp"
-            android:background="@drawable/bitmap_pattern_lodyas">
+            android:background="@drawable/bitmap_pattern_binding_dark">
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/view_attributes_card_spacing"
+                android:paddingBottom="@dimen/view_attributes_card_spacing">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_attributes_icon_spacing"
+                    android:layout_marginBottom="0dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_3d_glasses_white_48dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_attributes_icon_spacing"
+                    android:layout_marginBottom="0dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_bowtie_white_48dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_attributes_icon_spacing"
+                    android:layout_marginBottom="0dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_sonic_screwdriver_white_48dp" />
 
 
             </LinearLayout>
@@ -178,11 +205,38 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/view_attributes_background_square_width"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/view_attributes_card_spacing"
-            android:layout_marginBottom="0dp"
-            android:background="@drawable/bitmap_pattern_lodyas">
+            android:layout_marginBottom="@dimen/view_attributes_padding_bottom"
+            android:paddingTop="@dimen/view_attributes_card_spacing"
+            android:paddingBottom="@dimen/view_attributes_card_spacing"
+            android:gravity="center"
+            android:background="@drawable/bitmap_pattern_binding_dark">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_attributes_icon_spacing"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_3d_glasses_white_48dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_attributes_icon_spacing"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_bowtie_white_48dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_attributes_icon_spacing"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_sonic_screwdriver_white_48dp" />
 
         </LinearLayout>
 

@@ -16,5 +16,5 @@
   -->
 <bitmap
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@drawable/pattern_lodyas"
+    android:src="@drawable/pattern_binding_dark"
     android:tileMode="repeat" />
