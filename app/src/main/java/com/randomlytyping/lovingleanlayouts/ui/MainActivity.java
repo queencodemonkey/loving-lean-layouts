@@ -32,6 +32,7 @@ import android.widget.TextView;
 
 import com.randomlytyping.lovingleanlayouts.Intents;
 import com.randomlytyping.lovingleanlayouts.R;
+import com.randomlytyping.util.AppCompatUtil;
 
 import butterknife.ButterKnife;
 
@@ -45,8 +46,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Toolbar toolbar = ButterKnife.findById(this, R.id.app_bar);
-        setSupportActionBar(toolbar);
+        AppCompatUtil.setToolbarAppBar(this, R.id.app_bar);
 
         final RecyclerView exampleList = ButterKnife.findById(this, R.id.example_list);
         exampleList.setLayoutManager(new LinearLayoutManager(this));

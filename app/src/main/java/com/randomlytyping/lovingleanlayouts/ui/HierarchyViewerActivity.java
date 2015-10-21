@@ -22,6 +22,7 @@ import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
 import com.randomlytyping.lovingleanlayouts.R;
+import com.randomlytyping.util.AppCompatUtil;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -43,13 +44,9 @@ public class HierarchyViewerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_hierarchy_viewer);
-
+        AppCompatUtil.setToolbarAppBar(this, R.id.app_bar);
         ButterKnife.bind(this);
-
-        final Toolbar toolbar = ButterKnife.findById(this, R.id.app_bar);
-        setSupportActionBar(toolbar);
 
         statusTextView.setText(R.string.hierarchy_viewer_status_bar_message_sample);
     }
