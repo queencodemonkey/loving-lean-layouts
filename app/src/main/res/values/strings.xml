@@ -22,12 +22,18 @@
     <string name="activity_title_attributes">Use What You Got</string>
     <string name="activity_title_simple_views">Simple Pleasures</string>
     <string name="activity_title_learn_from_lint">Learning from Lint</string>
+    <string name="activity_title_about">About</string>
 
     <!-- Examples -->
     <string name="example_list_subheader">Examples</string>
     <string name="example_hierarchy_viewer">Hierarchy Viewer</string>
+    <string name="example_lint_warnings">Learn from Lint</string>
     <string name="example_attributes">Using Attributes</string>
-    <string name="example_learn_from_lint">Learn from Lint</string>
+    <string name="example_simpler_views">Simpler Views</string>
+
+    <!-- About -->
+    <string name="about_subheader_icons">Icons</string>
+    <string name="about_subheader_fonts">Fonts</string>
 
     <!-- Hierarchy Viewer -->
     <string name="hierarchy_viewer_attribution_unsplash">Pictures from Unsplash</string>

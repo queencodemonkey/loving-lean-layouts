@@ -15,7 +15,6 @@
   limitations under the License.
   -->
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
@@ -50,6 +49,16 @@
 
     <style name="TextAppearance.LLL.NestedWeights" parent="TextAppearance.AppCompat.Headline">
         <item name="fontPath">@string/font_path_alegreya</item>
+    </style>
+
+    <style name="TextAppearance.LLL.Overlay1" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="fontPath">@string/font_path_fira_mono_bold</item>
+    </style>
+
+    <style name="TextAppearance.LLL.Overlay2" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="fontPath">@string/font_path_merriweather_black</item>
     </style>
 
     <!-- Widget styles -->

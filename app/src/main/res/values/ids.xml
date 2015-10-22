@@ -18,7 +18,7 @@
     <!-- Example IDs -->
     <item type="id" name="example_hierarchy_viewer" />
     <item type="id" name="example_attributes" />
-    <item type="id" name="example_simple_views" />
+    <item type="id" name="example_simpler_views" />
     <item type="id" name="example_lint_warnings" />
     <item type="id" name="example_merge" />
     <item type="id" name="example_view_stub" />

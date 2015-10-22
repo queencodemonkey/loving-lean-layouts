@@ -9,5 +9,6 @@
 
     <color name="pink_500">#E91E63</color>
 
+    <color name="black_48p">#60000000</color>
     <color name="white_12p">#1FFFFFFF</color>
 </resources>

@@ -24,6 +24,8 @@ import android.support.annotation.StringRes;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -42,12 +44,33 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_list);
         AppCompatActivitySetup.with(this).supportAppBar(R.id.app_bar);
 
-        final RecyclerView exampleList = ButterKnife.findById(this, R.id.example_list);
+        final RecyclerView exampleList = ButterKnife.findById(this, R.id.list);
         exampleList.setLayoutManager(new LinearLayoutManager(this));
         exampleList.setAdapter(new ExampleAdapter(this));
+    }
+
+    //
+    // Activity callbacks
+    //
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_about:
+                startActivity(Intents.newAboutIntent(this));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     //
@@ -57,10 +80,14 @@ public class MainActivity extends BaseActivity {
     enum Example {
         HIERARCHY_VIEW(R.id.example_hierarchy_viewer, R.drawable.ic_view_quilt_white_36dp,
                 R.string.example_hierarchy_viewer),
+        LINT_WARNINGS(R.id.example_lint_warnings, R.drawable.ic_view_quilt_white_36dp,
+                R.string.example_lint_warnings),
         ATTRIBUTES(R.id.example_attributes, R.drawable.ic_view_quilt_white_36dp,
                 R.string.example_attributes),
-        LEARN_FROM_LINT(R.id.example_learn_from_lint, R.drawable.ic_view_quilt_white_36dp,
-                R.string.example_learn_from_lint);
+        SIMPLER_VIEWS(R.id.example_simpler_views, R.drawable.ic_view_quilt_white_36dp,
+                R.string.example_simpler_views);
+
+        private static final Example[] EXAMPLES_ALL = {HIERARCHY_VIEW, LINT_WARNINGS, ATTRIBUTES, SIMPLER_VIEWS};
 
         //
         // Fields
@@ -85,18 +112,13 @@ public class MainActivity extends BaseActivity {
         //
 
         static int getExampleCount() {
-            return 3;
+            return EXAMPLES_ALL.length;
         }
 
         static Example getExample(int position) {
-            switch (position) {
-                case 1:
-                    return ATTRIBUTES;
-                case 2:
-                    return LEARN_FROM_LINT;
-                default:
-                    return HIERARCHY_VIEW;
-            }
+            return position >= 0 || position < EXAMPLES_ALL.length
+                    ? EXAMPLES_ALL[position]
+                    : HIERARCHY_VIEW;
         }
     }
 
@@ -109,8 +131,8 @@ public class MainActivity extends BaseActivity {
         // Fields
         //
 
-        Example example;
-        TextView textView;
+        private TextView mTextView;
+        private Example mExample;
 
         //
         // Constructors
@@ -124,18 +146,18 @@ public class MainActivity extends BaseActivity {
         ViewHolder(View itemView) {
             super(itemView);
 
-            example = Example.HIERARCHY_VIEW;
+            mExample = Example.HIERARCHY_VIEW;
 
             if (itemView instanceof TextView) {
-                textView = (TextView) itemView;
-                textView.setOnClickListener(this);
+                mTextView = (TextView) itemView;
+                mTextView.setOnClickListener(this);
             }
         }
 
         void setExample(Example example) {
-            this.example = example;
-            textView.setCompoundDrawablesWithIntrinsicBounds(example.iconResId, 0, 0, 0);
-            textView.setText(example.stringResId);
+            this.mExample = example;
+            mTextView.setCompoundDrawablesWithIntrinsicBounds(example.iconResId, 0, 0, 0);
+            mTextView.setText(example.stringResId);
         }
 
         //
@@ -145,16 +167,18 @@ public class MainActivity extends BaseActivity {
         @Override
         public void onClick(View v) {
             final Context context = MainActivity.this;
-            switch (example) {
+            switch (mExample) {
                 case HIERARCHY_VIEW:
                     startActivity(Intents.newHierarchyViewerIntent(context));
+                    break;
+                case LINT_WARNINGS:
+                    startActivity(Intents.newLintWarningsIntent(context));
                     break;
                 case ATTRIBUTES:
                     startActivity(Intents.newAttributesIntent(context));
                     break;
-                case LEARN_FROM_LINT:
-                    startActivity(Intents.newLearnFromLintIntent(context));
-                    break;
+                case SIMPLER_VIEWS:
+                    startActivity(Intents.newSimplerViewsExamplesIntent(context));
             }
         }
     }
@@ -174,7 +198,7 @@ public class MainActivity extends BaseActivity {
          *
          * @param context The current context.
          */
-        public ExampleAdapter(Context context) {
+        ExampleAdapter(Context context) {
             mInflater = LayoutInflater.from(context);
         }
 

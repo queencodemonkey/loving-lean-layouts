@@ -14,20 +14,10 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
-
-    <!-- App bar -->
-    <include layout="@layout/app_bar_default" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/example_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-</LinearLayout>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/activity_title_about"
+        app:showAsAction="never" />
+</menu>

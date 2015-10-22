@@ -33,7 +33,7 @@
     <dimen name="list_item_drawable_padding">20dp</dimen>
 
     <!-- List metrics: example list -->
-    <dimen name="list_item_example_height_min">56dp</dimen>
+    <dimen name="list_item_default_height_min">56dp</dimen>
 
     <!-- Grid metrics -->
     <dimen name="grid_spacing">8dp</dimen>
@@ -41,6 +41,8 @@
     <!-- Hierarchy Viewer Example -->
     <dimen name="hierarchy_viewer_image_height">160dp</dimen>
     <dimen name="hierarchy_viewer_text_margin_vertical">16dp</dimen>
+    <dimen name="hierarchy_viewer_image_small_height">48dp</dimen>
+    <dimen name="hierarchy_view_text_overlay_margin_horizontal">24dp</dimen>
 
     <!-- View Attributes Example -->
     <dimen name="view_attributes_padding_bottom">24dp</dimen>

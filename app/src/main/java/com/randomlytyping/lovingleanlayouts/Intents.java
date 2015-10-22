@@ -18,10 +18,12 @@ package com.randomlytyping.lovingleanlayouts;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 
+import com.randomlytyping.lovingleanlayouts.ui.AboutActivity;
 import com.randomlytyping.lovingleanlayouts.ui.AttributesActivity;
 import com.randomlytyping.lovingleanlayouts.ui.HierarchyViewerActivity;
-import com.randomlytyping.lovingleanlayouts.ui.LearnFromLintActivity;
+import com.randomlytyping.lovingleanlayouts.ui.LintWarningsActivity;
 import com.randomlytyping.lovingleanlayouts.ui.SimpleViewsActivity;
 
 /**
@@ -40,12 +42,22 @@ public class Intents {
         return new Intent(context, AttributesActivity.class);
     }
 
-    public static Intent newLearnFromLintIntent(Context context) {
-        return new Intent(context, LearnFromLintActivity.class);
+    public static Intent newLintWarningsIntent(Context context) {
+        return new Intent(context, LintWarningsActivity.class);
     }
 
-    public static Intent newSimpleViewExamplesIntent(Context context) {
+    public static Intent newSimplerViewsExamplesIntent(Context context) {
         return new Intent(context, SimpleViewsActivity.class);
+    }
 
+    public static Intent newAboutIntent(Context context) {
+        return new Intent(context, AboutActivity.class);
+    }
+
+    public static Intent newUrlIntent(String url) {
+        final Uri uri = Uri.parse(url);
+        final Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(uri);
+        return intent;
     }
 }

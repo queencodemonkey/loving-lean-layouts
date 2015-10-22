@@ -27,6 +27,5 @@
           android:gravity="left|center_vertical"
           android:background="?attr/selectableItemBackground"
           android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-          tools:drawableStart="@drawable/ic_view_quilt_white_36dp"
           tools:text="Example List Item"
           tools:ignore="RtlHardcoded" />
