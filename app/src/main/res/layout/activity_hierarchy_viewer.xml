@@ -68,6 +68,7 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:baselineAligned="false"
                 android:paddingStart="@dimen/grid_spacing"
                 android:paddingEnd="@dimen/grid_spacing">
 
