@@ -86,7 +86,11 @@ public class AboutActivity extends BaseActivity {
         FONT_ALEGREYA("Alegreya by Huerta Tipográfica, SIL Open Font License, 1.1",
                 "https://www.google.com/fonts/specimen/Alegreya",
                 0,
-                R.string.font_path_alegreya),
+                R.string.font_path_alegreya_bold),
+        FONT_CLEAR_SANS("Clear Sans by Intel, Apache 2.0 License",
+                "https://01.org/clear-SANS",
+                0,
+                R.string.font_path_clear_sans),
         FONT_FIRA("Fira, Firefox OS Typeface, SIL Open Font License, 1.1",
                 "https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/",
                 0,
@@ -101,7 +105,7 @@ public class AboutActivity extends BaseActivity {
         };
 
         private static final Attribution[] FONT_ATTRIBUTIONS = {
-                FONT_ACTOR, FONT_ALEGREYA, FONT_FIRA, FONT_MERRIWEATHER
+                FONT_ACTOR, FONT_ALEGREYA, FONT_CLEAR_SANS, FONT_FIRA, FONT_MERRIWEATHER
         };
 
         private final String text;
