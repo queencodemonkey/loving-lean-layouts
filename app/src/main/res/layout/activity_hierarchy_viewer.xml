@@ -39,6 +39,32 @@
             android:paddingBottom="0dp">
 
             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/grid_spacing"
+                android:layout_marginEnd="@dimen/grid_spacing"
+                android:paddingTop="@dimen/grid_spacing"
+                android:paddingBottom="@dimen/grid_spacing"
+                android:gravity="left|center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera_white_48dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="@dimen/hierarchy_viewer_icon_padding"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hierarchy_viewer_attribution_unsplash"
+                    style="@style/TextAppearance.AppCompat.Body2" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -103,50 +129,67 @@
                             android:layout_marginTop="0dp"
                             android:layout_marginBottom="@dimen/grid_spacing">
 
-                            <ImageView
+                            <LinearLayout
+                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="@dimen/hierarchy_viewer_image_height"
-                                android:layout_weight="1"
-                                android:src="@drawable/unsplash_small_apple_green"
-                                android:scaleType="centerCrop"
-                                android:contentDescription="@null" />
+                                android:layout_height="wrap_content">
 
-                            <FrameLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
 
-                                <LinearLayout
-                                    android:orientation="vertical"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:paddingStart="@dimen/hierarchy_view_text_overlay_margin_horizontal"
-                                    android:paddingEnd="@dimen/hierarchy_view_text_overlay_margin_horizontal"
-                                    android:paddingTop="@dimen/hierarchy_viewer_text_margin_vertical"
-                                    android:paddingBottom="0dp"
-                                    android:background="@color/black_48p">
-
-                                    <TextView
+                                    <ImageView
                                         android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Frutas"
-                                        style="@style/TextAppearance.LLL.Overlay1" />
+                                        android:layout_height="@dimen/hierarchy_viewer_image_height"
+                                        android:src="@drawable/unsplash_small_cherries"
+                                        android:scaleType="centerCrop"
+                                        android:contentDescription="@null" />
 
-                                    <TextView
+                                    <LinearLayout
+                                        android:orientation="vertical"
                                         android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Fruit"
-                                        android:gravity="right"
-                                        style="@style/TextAppearance.LLL.Overlay2" />
+                                        android:layout_height="match_parent"
+                                        android:paddingStart="@dimen/hierarchy_view_text_overlay_margin_horizontal"
+                                        android:paddingEnd="@dimen/hierarchy_view_text_overlay_margin_horizontal"
+                                        android:paddingTop="@dimen/hierarchy_viewer_text_margin_vertical"
+                                        android:paddingBottom="0dp"
+                                        android:background="@color/black_48p">
 
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Trái Cây"
-                                        style="@style/TextAppearance.LLL.Overlay1" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Frutas"
+                                            style="@style/TextAppearance.LLL.Overlay1" />
 
-                                </LinearLayout>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Fruit"
+                                            android:gravity="right"
+                                            style="@style/TextAppearance.LLL.Overlay2" />
 
-                            </FrameLayout>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Trái Cây"
+                                            style="@style/TextAppearance.LLL.Overlay1" />
+
+                                    </LinearLayout>
+
+                                </FrameLayout>
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/hierarchy_viewer_image_height"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="@dimen/grid_spacing"
+                                    android:layout_marginEnd="0dp"
+                                    android:src="@drawable/unsplash_small_apple_green"
+                                    android:scaleType="centerCrop"
+                                    android:contentDescription="@null" />
+
+                            </LinearLayout>
 
                         </RelativeLayout>
 
@@ -245,42 +288,6 @@
                         android:contentDescription="@null" />
 
                 </LinearLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/grid_spacing"
-                    android:layout_marginBottom="0dp"
-                    android:background="@android:color/white" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/grid_spacing"
-                    android:paddingBottom="@dimen/grid_spacing"
-                    android:gravity="left|center_vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_camera_white_48dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginEnd="8dp"
-                        android:contentDescription="@null" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/hierarchy_viewer_attribution_unsplash"
-                        style="@style/TextAppearance.AppCompat.Body2" />
-
-                </LinearLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@android:color/white" />
 
                 <LinearLayout
                     android:orientation="horizontal"

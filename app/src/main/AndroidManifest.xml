@@ -42,7 +42,7 @@
 
         <activity
             android:name=".ui.LintWarningsActivity"
-            android:label="@string/activity_title_simple_views"
+            android:label="@string/activity_title_lint_warnings"
             android:parentActivityName=".ui.MainActivity"  />
 
         <activity
