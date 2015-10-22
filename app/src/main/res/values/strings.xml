@@ -37,11 +37,14 @@
 
     <!-- Hierarchy Viewer -->
     <string name="hierarchy_viewer_attribution_unsplash">Pictures from Unsplash</string>
-    <string name="hierarchy_viewer_status_bar_message_sample">Last Week\'s Topic: Photos That Make You Hungry</string>
+    <string name="hierarchy_viewer_overlay_text_01">Frutas</string>
+    <string name="hierarchy_viewer_overlay_text_02">Fruit</string>
+    <string name="hierarchy_viewer_overlay_text_03">Trái Cây</string>
     <string name="hierarchy_viewer_sample_text_01">Fruit</string>
     <string name="hierarchy_viewer_sample_text_02">Pastries</string>
     <string name="hierarchy_viewer_sample_text_03">Almonds</string>
     <string name="hierarchy_viewer_sample_text_04">Lemonade</string>
+    <string name="hierarchy_viewer_status_bar_message_sample">Last Week\'s Topic: Photos That Make You Hungry</string>
 
     <!-- View Attributes -->
     <string name="view_attributes_text_01">Wibbly wobbly…</string>
@@ -49,7 +52,7 @@
     <string name="view_attributes_complex">non-linear</string>
     <string name="view_attributes_simple">non-subjective</string>
 
-    <!-- Learn from Lint -->
+    <!-- Lint Warnings -->
     <string name="lint_useless_parent">Single View in a LinearLayout</string>
     <string name="lint_useless_leaf_01">LinearLayout as a gap</string>
     <string name="lint_useless_leaf_02">Space widget</string>
@@ -59,7 +62,4 @@
     <string name="lint_nested_weights_04">not</string>
     <string name="lint_nested_weights_05">good!</string>
     <string name="lint_nested_layouts">Lottsa Layouts</string>
-    <string name="hierarchy_viewer_overlay_text_01">Frutas</string>
-    <string name="hierarchy_viewer_overlay_text_02">Fruit</string>
-    <string name="hierarchy_viewer_overlay_text_03">Trái Cây</string>
 </resources>
