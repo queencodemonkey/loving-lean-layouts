@@ -65,193 +65,169 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="@dimen/grid_spacing"
                 android:paddingEnd="@dimen/grid_spacing">
 
                 <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="@dimen/grid_spacing"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="@dimen/grid_spacing">
 
                     <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginEnd="@dimen/grid_spacing"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hierarchy_viewer_image_small_height"
                         android:layout_marginTop="0dp"
                         android:layout_marginBottom="@dimen/grid_spacing">
 
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/hierarchy_viewer_image_small_height"
-                            android:layout_marginTop="0dp"
-                            android:layout_marginBottom="@dimen/grid_spacing">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/hierarchy_viewer_image_height"
+                            android:layout_weight="1"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="@dimen/grid_spacing"
+                            android:src="@drawable/unsplash_small_lemons"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@null" />
 
-                            <ImageView
-                                android:layout_width="0dp"
-                                android:layout_height="@dimen/hierarchy_viewer_image_height"
-                                android:layout_weight="1"
-                                android:layout_marginStart="0dp"
-                                android:layout_marginEnd="@dimen/grid_spacing"
-                                android:src="@drawable/unsplash_small_garlic_bulbs"
-                                android:scaleType="centerCrop"
-                                android:contentDescription="@null" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/hierarchy_viewer_image_height"
+                            android:layout_weight="1"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="@dimen/grid_spacing"
+                            android:src="@drawable/unsplash_small_bananas"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@null" />
 
-                            <ImageView
-                                android:layout_width="0dp"
-                                android:layout_height="@dimen/hierarchy_viewer_image_height"
-                                android:layout_weight="1"
-                                android:layout_marginStart="0dp"
-                                android:layout_marginEnd="@dimen/grid_spacing"
-                                android:src="@drawable/unsplash_small_bananas"
-                                android:scaleType="centerCrop"
-                                android:contentDescription="@null" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/hierarchy_viewer_image_height"
+                            android:layout_weight="1"
+                            android:src="@drawable/unsplash_small_blueberries"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@null" />
 
-                            <ImageView
-                                android:layout_width="0dp"
-                                android:layout_height="@dimen/hierarchy_viewer_image_height"
-                                android:layout_weight="1"
-                                android:src="@drawable/unsplash_small_blueberries"
-                                android:scaleType="centerCrop"
-                                android:contentDescription="@null" />
+                    </LinearLayout>
 
-                        </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                        <RelativeLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:layout_marginBottom="@dimen/grid_spacing">
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
 
                             <LinearLayout
-                                android:orientation="horizontal"
+                                android:orientation="vertical"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <FrameLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1">
-
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="@dimen/hierarchy_viewer_image_height"
-                                        android:src="@drawable/unsplash_small_cherries"
-                                        android:scaleType="centerCrop"
-                                        android:contentDescription="@null" />
-
-                                    <LinearLayout
-                                        android:orientation="vertical"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:paddingStart="@dimen/hierarchy_view_text_overlay_margin_horizontal"
-                                        android:paddingEnd="@dimen/hierarchy_view_text_overlay_margin_horizontal"
-                                        android:paddingTop="@dimen/hierarchy_viewer_text_margin_vertical"
-                                        android:paddingBottom="0dp"
-                                        android:background="@color/black_48p">
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:text="Frutas"
-                                            style="@style/TextAppearance.LLL.Overlay1" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:text="Fruit"
-                                            android:gravity="right"
-                                            style="@style/TextAppearance.LLL.Overlay2" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:text="Trái Cây"
-                                            style="@style/TextAppearance.LLL.Overlay1" />
-
-                                    </LinearLayout>
-
-                                </FrameLayout>
+                                android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:layout_width="0dp"
-                                    android:layout_height="@dimen/hierarchy_viewer_image_height"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
                                     android:layout_weight="1"
-                                    android:layout_marginStart="@dimen/grid_spacing"
-                                    android:layout_marginEnd="0dp"
+                                    android:src="@drawable/unsplash_small_cherries"
+                                    android:scaleType="centerCrop"
+                                    android:contentDescription="@null" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
                                     android:src="@drawable/unsplash_small_apple_green"
                                     android:scaleType="centerCrop"
                                     android:contentDescription="@null" />
 
                             </LinearLayout>
 
-                        </RelativeLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingStart="@dimen/hierarchy_view_text_overlay_margin_horizontal"
+                                android:paddingEnd="@dimen/hierarchy_view_text_overlay_margin_horizontal"
+                                android:paddingTop="@dimen/hierarchy_viewer_text_margin_vertical"
+                                android:paddingBottom="0dp"
+                                android:background="@color/black_60p">
 
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/hierarchy_viewer_image_small_height">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/hierarchy_viewer_overlay_text_01"
+                                    style="@style/TextAppearance.LLL.Overlay1" />
 
-                            <ImageView
-                                android:layout_width="0dp"
-                                android:layout_height="@dimen/hierarchy_viewer_image_height"
-                                android:layout_weight="1"
-                                android:layout_marginStart="0dp"
-                                android:layout_marginEnd="@dimen/grid_spacing"
-                                android:src="@drawable/unsplash_small_green_beans"
-                                android:scaleType="centerCrop"
-                                android:contentDescription="@null" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/hierarchy_viewer_overlay_text_02"
+                                    android:gravity="right"
+                                    style="@style/TextAppearance.LLL.Overlay2" />
 
-                            <ImageView
-                                android:layout_width="0dp"
-                                android:layout_height="@dimen/hierarchy_viewer_image_height"
-                                android:layout_weight="1"
-                                android:src="@drawable/unsplash_small_tomato"
-                                android:scaleType="centerCrop"
-                                android:contentDescription="@null" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/hierarchy_viewer_overlay_text_03"
+                                    style="@style/TextAppearance.LLL.Overlay1" />
 
-                        </LinearLayout>
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/hierarchy_viewer_image_height"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/grid_spacing"
+                            android:layout_marginEnd="0dp"
+                            android:src="@drawable/unsplash_small_pear"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@null" />
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="@dimen/grid_spacing">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
                         android:layout_weight="1"
                         android:layout_marginTop="0dp"
-                        android:layout_marginBottom="@dimen/grid_spacing">
+                        android:layout_marginBottom="@dimen/grid_spacing"
+                        android:src="@drawable/unsplash_small_citrus"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@null" />
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:layout_marginTop="0dp"
-                            android:layout_marginBottom="@dimen/grid_spacing"
-                            android:src="@drawable/unsplash_small_citrus"
-                            android:scaleType="centerCrop"
-                            android:contentDescription="@null" />
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/unsplash_small_plum"
-                            android:scaleType="centerCrop"
-                            android:contentDescription="@null" />
-
-                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/unsplash_small_plum"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@null" />
 
                 </LinearLayout>
 
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"

@@ -59,4 +59,7 @@
     <string name="lint_nested_weights_04">not</string>
     <string name="lint_nested_weights_05">good!</string>
     <string name="lint_nested_layouts">Lottsa Layouts</string>
+    <string name="hierarchy_viewer_overlay_text_01">Frutas</string>
+    <string name="hierarchy_viewer_overlay_text_02">Fruit</string>
+    <string name="hierarchy_viewer_overlay_text_03">Trái Cây</string>
 </resources>
