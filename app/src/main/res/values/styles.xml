@@ -48,7 +48,7 @@
     </style>
 
     <style name="TextAppearance.LLL.NestedWeights" parent="TextAppearance.AppCompat.Headline">
-        <item name="fontPath">@string/font_path_alegreya</item>
+        <item name="fontPath">@string/font_path_alegreya_bold</item>
     </style>
 
     <style name="TextAppearance.LLL.Overlay1" parent="TextAppearance.AppCompat.Subhead">
@@ -59,6 +59,22 @@
     <style name="TextAppearance.LLL.Overlay2" parent="TextAppearance.AppCompat.Subhead">
         <item name="android:textColor">@android:color/white</item>
         <item name="fontPath">@string/font_path_merriweather_black</item>
+    </style>
+
+    <style name="TextAppearance.LLL.Dialogue1" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontPath">@string/font_path_merriweather_regular</item>
+    </style>
+
+    <style name="TextAppearance.LLL.Dialogue2" parent="TextAppearance.AppCompat.Subhead">
+        <item name="fontPath">@string/font_path_clear_sans</item>
+    </style>
+
+    <style name="TextAppearance.LLL.Monologue" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontPath">@string/font_path_alegreya_regular</item>
+    </style>
+
+    <style name="TextAppearance.LLL.MonologueBig" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontPath">@string/font_path_alegreya_black</item>
     </style>
 
     <!-- Widget styles -->

@@ -15,11 +15,165 @@
   limitations under the License.
   -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
     <!-- App bar -->
     <include layout="@layout/app_bar_default" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/simpler_views_text_margin_vertical"
+                android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                android:layout_marginStart="@dimen/simpler_views_text_margin_horizontal"
+                android:layout_marginEnd="@dimen/simpler_views_text_margin_horizontal"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                    android:text="@string/simpler_views_text_A01"
+                    style="@style/TextAppearance.LLL.Dialogue1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                    android:text="@string/simpler_views_text_B01"
+                    android:gravity="right"
+                    style="@style/TextAppearance.LLL.Dialogue2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/simpler_views_text_A02"
+                    style="@style/TextAppearance.LLL.Dialogue1" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/simpler_views_text_margin_horizontal"
+                android:layout_marginEnd="@dimen/simpler_views_text_margin_horizontal"
+                android:background="@drawable/shape_divider_default" />
+
+            <TextView
+                android:id="@+id/simple_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/simpler_views_text_gap"
+                android:layout_marginBottom="@dimen/simpler_views_text_margin_vertical"
+                android:layout_marginStart="@dimen/simpler_views_text_margin_horizontal"
+                android:layout_marginEnd="@dimen/simpler_views_text_margin_horizontal"
+                android:text="@string/simpler_views_text_B02"
+                tools:gravity="right"
+                style="@style/TextAppearance.LLL.Dialogue2" />
+
+            <include layout="@layout/divider_default" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/simpler_views_text_margin_vertical"
+                android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                android:layout_marginStart="@dimen/simpler_views_text_margin_horizontal"
+                android:layout_marginEnd="@dimen/simpler_views_text_margin_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="@dimen/simpler_views_text_gap">
+
+                    <TextView
+                        android:layout_width="@dimen/simpler_views_narrow_block_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                        android:text="@string/simpler_views_text_C00"
+                        style="@style/TextAppearance.LLL.Monologue" />
+
+                    <TextView
+                        android:layout_width="@dimen/simpler_views_narrow_block_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                        android:text="@string/simpler_views_text_C01"
+                        style="@style/TextAppearance.LLL.Monologue" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                    android:text="@string/simpler_views_text_C02"
+                    style="@style/TextAppearance.LLL.MonologueBig" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="@dimen/simpler_views_text_margin_vertical"
+                android:layout_marginStart="@dimen/simpler_views_text_margin_horizontal"
+                android:layout_marginEnd="@dimen/simpler_views_text_margin_horizontal">
+
+                <TextView
+                    android:id="@+id/text_top_left"
+                    android:layout_width="@dimen/simpler_views_narrow_block_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="@dimen/simpler_views_text_gap"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                    android:text="@string/simpler_views_text_C03"
+                    style="@style/TextAppearance.LLL.Monologue" />
+
+                <TextView
+                    android:layout_width="@dimen/simpler_views_narrow_block_width"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_top_left"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                    android:text="@string/simpler_views_text_C04"
+                    style="@style/TextAppearance.LLL.Monologue" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/text_top_left"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                    android:text="@string/simpler_views_text_C05"
+                    style="@style/TextAppearance.LLL.MonologueBig" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

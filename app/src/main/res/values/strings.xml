@@ -62,4 +62,22 @@
     <string name="lint_nested_weights_04">not</string>
     <string name="lint_nested_weights_05">good!</string>
     <string name="lint_nested_layouts">Lottsa Layouts</string>
+
+    <!-- Simpler Views -->
+    <string name="simpler_views_text_A01">We have ridden the length and breadth of the land in search of knights who will join me in my court at Camelot. I must speak with your lord and master.</string>
+    <string name="simpler_views_text_B01">What? Ridden on a horse?</string>
+    <string name="simpler_views_text_A02">Yes.</string>
+
+    <string name="simpler_views_text_B02">You\'re using coconuts!</string>
+    <string name="simpler_views_text_A03">What?</string>
+    <string name="simpler_views_text_B03">You\'ve got two empty halves of coconut and you\'re bangin\' \'em together.</string>
+
+    <string name="simpler_views_text_C00">And the Lord spake, saying…</string>
+    <string name="simpler_views_text_C01">First shalt thou take out the Holy Pin.</string>
+    <string name="simpler_views_text_C02">Then shalt thou count to three, no more, no less. Three shall be the number thou shalt count, and the number of the counting shall be three.</string>
+
+    <string name="simpler_views_text_C03">Four shalt thou not count, neither count thou two, excepting that thou then proceed to three.</string>
+    <string name="simpler_views_text_C04">Five is right out.</string>
+    <string name="simpler_views_text_C05">Once the number three, being the third number, be reached, then lobbest thou thy Holy Hand Grenade of Antioch towards thy foe, who, being naughty in My sight, shall snuff it.</string>
+
 </resources>

@@ -56,4 +56,10 @@
     <dimen name="lint_single_child_padding_vertical">16dp</dimen>
     <dimen name="lint_single_nested_padding">4dp</dimen>
 
+    <!-- Simpler Views Example -->
+    <dimen name="simpler_views_text_margin_horizontal">48dp</dimen>
+    <dimen name="simpler_views_text_gap">16dp</dimen>
+    <dimen name="simpler_views_text_margin_vertical">24dp</dimen>
+    <dimen name="simpler_views_narrow_block_width">112dp</dimen>
+
 </resources>
