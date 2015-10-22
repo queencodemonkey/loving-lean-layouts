@@ -60,7 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/hierarchy_viewer_attribution_unsplash"
-                    style="@style/TextAppearance.AppCompat.Body2" />
+                    style="@style/TextAppearance.AppCompat.Title" />
 
             </LinearLayout>
 
@@ -123,66 +123,68 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <FrameLayout
+                        <LinearLayout
+                            android:orientation="vertical"
                             android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1">
 
-                            <LinearLayout
-                                android:orientation="vertical"
+                            <FrameLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent">
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="@dimen/grid_spacing">
 
                                 <ImageView
                                     android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
                                     android:src="@drawable/unsplash_small_cherries"
                                     android:scaleType="centerCrop"
                                     android:contentDescription="@null" />
 
-                                <ImageView
+                                <LinearLayout
+                                    android:orientation="vertical"
                                     android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
-                                    android:src="@drawable/unsplash_small_apple_green"
-                                    android:scaleType="centerCrop"
-                                    android:contentDescription="@null" />
+                                    android:layout_height="match_parent"
+                                    android:paddingStart="@dimen/hierarchy_view_text_overlay_margin_horizontal"
+                                    android:paddingEnd="@dimen/hierarchy_view_text_overlay_margin_horizontal"
+                                    android:paddingTop="@dimen/hierarchy_viewer_text_margin_vertical"
+                                    android:paddingBottom="0dp"
+                                    android:background="@color/black_60p">
 
-                            </LinearLayout>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/hierarchy_viewer_overlay_text_01"
+                                        style="@style/TextAppearance.LLL.Overlay1" />
 
-                            <LinearLayout
-                                android:orientation="vertical"
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/hierarchy_viewer_overlay_text_02"
+                                        android:gravity="right"
+                                        style="@style/TextAppearance.LLL.Overlay2" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/hierarchy_viewer_overlay_text_03"
+                                        style="@style/TextAppearance.LLL.Overlay1" />
+
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                            <ImageView
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:paddingStart="@dimen/hierarchy_view_text_overlay_margin_horizontal"
-                                android:paddingEnd="@dimen/hierarchy_view_text_overlay_margin_horizontal"
-                                android:paddingTop="@dimen/hierarchy_viewer_text_margin_vertical"
-                                android:paddingBottom="0dp"
-                                android:background="@color/black_60p">
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/unsplash_small_apple_green"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="@null" />
 
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/hierarchy_viewer_overlay_text_01"
-                                    style="@style/TextAppearance.LLL.Overlay1" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/hierarchy_viewer_overlay_text_02"
-                                    android:gravity="right"
-                                    style="@style/TextAppearance.LLL.Overlay2" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/hierarchy_viewer_overlay_text_03"
-                                    style="@style/TextAppearance.LLL.Overlay1" />
-
-                            </LinearLayout>
-
-                        </FrameLayout>
+                        </LinearLayout>
 
                         <ImageView
                             android:layout_width="0dp"

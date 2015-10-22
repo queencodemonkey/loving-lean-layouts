@@ -39,7 +39,7 @@
     <dimen name="grid_spacing">8dp</dimen>
 
     <!-- Hierarchy Viewer Example -->
-    <dimen name="hierarchy_viewer_icon_padding">8dp</dimen>
+    <dimen name="hierarchy_viewer_icon_padding">24dp</dimen>
     <dimen name="hierarchy_viewer_image_height">160dp</dimen>
     <dimen name="hierarchy_viewer_text_margin_vertical">16dp</dimen>
     <dimen name="hierarchy_viewer_image_small_height">48dp</dimen>
