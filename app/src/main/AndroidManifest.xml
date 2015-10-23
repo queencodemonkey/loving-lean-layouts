@@ -46,8 +46,9 @@
             android:parentActivityName=".ui.MainActivity"  />
 
         <activity
-            android:name=".ui.SimpleViewsActivity"
-            android:label="@string/activity_title_simple_views"
+            android:name=".ui.SimplerViewsActivity"
+            android:label="@string/activity_title_simpler_views"
+            android:parentActivityName=".ui.MainActivity"  />
             android:parentActivityName=".ui.MainActivity"  />
 
         <activity

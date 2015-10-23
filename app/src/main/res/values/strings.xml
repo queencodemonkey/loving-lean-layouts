@@ -19,9 +19,9 @@
     <!-- Titles -->
     <string name="app_name">Loving Lean Layouts</string>
     <string name="activity_title_hierarchy_viewer">What\'s All This Then?</string>
-    <string name="activity_title_attributes">Use What You Got</string>
-    <string name="activity_title_simple_views">Simple Pleasures</string>
     <string name="activity_title_lint_warnings">Learning from Lint</string>
+    <string name="activity_title_attributes">Use What You Got</string>
+    <string name="activity_title_simpler_views">Simple Pleasures</string>
     <string name="activity_title_about">About</string>
 
     <!-- Examples -->

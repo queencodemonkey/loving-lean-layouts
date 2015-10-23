@@ -49,7 +49,7 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
                     android:text="@string/simpler_views_text_A01"
-                    style="@style/TextAppearance.LLL.Dialogue1" />
+                    style="@style/TextAppearance.LLL.DialogueA" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -58,13 +58,13 @@
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
                     android:text="@string/simpler_views_text_B01"
                     android:gravity="right"
-                    style="@style/TextAppearance.LLL.Dialogue2" />
+                    style="@style/TextAppearance.LLL.DialogueB" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/simpler_views_text_A02"
-                    style="@style/TextAppearance.LLL.Dialogue1" />
+                    style="@style/TextAppearance.LLL.DialogueA" />
 
             </LinearLayout>
 
@@ -85,7 +85,7 @@
                 android:layout_marginEnd="@dimen/simpler_views_text_margin_horizontal"
                 android:text="@string/simpler_views_text_B02"
                 tools:gravity="right"
-                style="@style/TextAppearance.LLL.Dialogue2" />
+                style="@style/TextAppearance.LLL.DialogueB" />
 
             <include layout="@layout/divider_default" />
 
