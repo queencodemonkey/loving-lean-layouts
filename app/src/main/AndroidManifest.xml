@@ -49,6 +49,10 @@
             android:name=".ui.SimplerViewsActivity"
             android:label="@string/activity_title_simpler_views"
             android:parentActivityName=".ui.MainActivity"  />
+
+        <activity
+            android:name=".ui.OnTheFlyActivity"
+            android:label="@string/activity_title_on_the_fly"
             android:parentActivityName=".ui.MainActivity"  />
 
         <activity

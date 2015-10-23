@@ -17,14 +17,12 @@
 <resources>
     <!-- Example IDs -->
     <item type="id" name="example_hierarchy_viewer" />
+    <item type="id" name="example_lint_warnings" />
     <item type="id" name="example_attributes" />
     <item type="id" name="example_simpler_views" />
-    <item type="id" name="example_lint_warnings" />
-    <item type="id" name="example_merge" />
-    <item type="id" name="example_view_stub" />
-    <item type="id" name="example_relative_layout" />
+    <item type="id" name="example_on_the_fly" />
     <item type="id" name="example_custom_views" />
-    <item type="id" name="example_custom_view_group" />
+    <item type="id" name="example_fixed_it" />
 
     <!-- Recycler item types -->
     <item type="id" name="item_type_subheader" />

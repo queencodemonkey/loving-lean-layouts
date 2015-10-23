@@ -61,11 +61,11 @@
         <item name="fontPath">@string/font_path_merriweather_black</item>
     </style>
 
-    <style name="TextAppearance.LLL.Dialogue1" parent="TextAppearance.AppCompat.Body1">
+    <style name="TextAppearance.LLL.DialogueA" parent="TextAppearance.AppCompat.Body1">
         <item name="fontPath">@string/font_path_merriweather_regular</item>
     </style>
 
-    <style name="TextAppearance.LLL.Dialogue2" parent="TextAppearance.AppCompat.Subhead">
+    <style name="TextAppearance.LLL.DialogueB" parent="TextAppearance.AppCompat.Subhead">
         <item name="fontPath">@string/font_path_clear_sans</item>
     </style>
 

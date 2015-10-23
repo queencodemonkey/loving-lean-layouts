@@ -24,7 +24,8 @@ import com.randomlytyping.lovingleanlayouts.ui.AboutActivity;
 import com.randomlytyping.lovingleanlayouts.ui.AttributesActivity;
 import com.randomlytyping.lovingleanlayouts.ui.HierarchyViewerActivity;
 import com.randomlytyping.lovingleanlayouts.ui.LintWarningsActivity;
-import com.randomlytyping.lovingleanlayouts.ui.SimpleViewsActivity;
+import com.randomlytyping.lovingleanlayouts.ui.OnTheFlyActivity;
+import com.randomlytyping.lovingleanlayouts.ui.SimplerViewsActivity;
 
 /**
  * @since 2015.10.19
@@ -34,20 +35,21 @@ public class Intents {
     // Intent factory methods
     //
 
-    public static Intent newHierarchyViewerIntent(Context context) {
-        return new Intent(context, HierarchyViewerActivity.class);
-    }
-
-    public static Intent newAttributesIntent(Context context) {
-        return new Intent(context, AttributesActivity.class);
-    }
-
-    public static Intent newLintWarningsIntent(Context context) {
-        return new Intent(context, LintWarningsActivity.class);
-    }
-
-    public static Intent newSimplerViewsExamplesIntent(Context context) {
-        return new Intent(context, SimpleViewsActivity.class);
+    public static Intent newExampleIntent(Context context, Example example) {
+        switch (example) {
+            case HIERARCHY_VIEW:
+                return new Intent(context, HierarchyViewerActivity.class);
+            case ATTRIBUTES:
+                return new Intent(context, AttributesActivity.class);
+            case LINT_WARNINGS:
+                return new Intent(context, LintWarningsActivity.class);
+            case SIMPLER_VIEWS:
+                return new Intent(context, SimplerViewsActivity.class);
+            case ON_THE_FLY:
+                return new Intent(context, OnTheFlyActivity.class);
+            default:
+                return null;
+        }
     }
 
     public static Intent newAboutIntent(Context context) {

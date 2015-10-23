@@ -62,4 +62,7 @@
     <dimen name="simpler_views_text_margin_vertical">24dp</dimen>
     <dimen name="simpler_views_narrow_block_width">112dp</dimen>
 
+    <!-- On the Fly Example -->
+    <dimen name="on_the_fly_text_margin">16dp</dimen>
+
 </resources>

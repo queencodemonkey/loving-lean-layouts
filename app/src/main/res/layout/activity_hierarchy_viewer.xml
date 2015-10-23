@@ -14,22 +14,25 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              tools:context=".ui.HierarchyViewerActivity"
-              tools:ignore="RtlHardcoded"
-              android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.HierarchyViewerActivity"
+                tools:ignore="RtlHardcoded">
 
     <!-- App bar -->
-    <include layout="@layout/app_bar_default" />
+    <include
+        layout="@layout/app_bar_default"
+        android:id="@+id/app_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:fillViewport="true"
-        android:layout_weight="1">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_container"
+        android:fillViewport="true">
 
         <LinearLayout
             android:orientation="vertical"
@@ -438,4 +441,4 @@
 
     </ScrollView>
 
-</LinearLayout>
+</RelativeLayout>
