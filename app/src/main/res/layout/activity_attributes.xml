@@ -78,21 +78,6 @@
                  android:layout_marginTop="@dimen/view_attributes_card_spacing"
                  android:layout_marginBottom="@dimen/view_attributes_card_spacing" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="@dimen/view_attributes_card_spacing"
-            android:layout_gravity="center"
-            android:drawablePadding="@dimen/view_attributes_icon_spacing"
-            android:drawableLeft="@drawable/ic_keyboard_arrow_left_white_24dp"
-            android:drawableRight="@drawable/ic_keyboard_arrow_right_white_24dp"
-            android:drawableTop="@drawable/ic_keyboard_arrow_up_white_24dp"
-            android:drawableBottom="@drawable/ic_keyboard_arrow_down_white_24dp"
-            android:text="@string/view_attributes_complex"
-            style="@style/TextAppearance.LLL.CauseEffect"
-            tools:ignore="RtlHardcoded" />
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -149,6 +134,21 @@
                 android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
 
         </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="@dimen/view_attributes_card_spacing"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/view_attributes_icon_spacing"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_left_white_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_white_24dp"
+            android:drawableTop="@drawable/ic_keyboard_arrow_up_white_24dp"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_down_white_24dp"
+            android:text="@string/view_attributes_complex"
+            style="@style/TextAppearance.LLL.CauseEffect"
+            tools:ignore="RtlHardcoded" />
 
         <include layout="@layout/divider_default"
                  android:layout_width="match_parent"

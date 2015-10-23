@@ -155,7 +155,7 @@
                                     android:paddingEnd="@dimen/hierarchy_view_text_overlay_margin_horizontal"
                                     android:paddingTop="@dimen/hierarchy_viewer_text_margin_vertical"
                                     android:paddingBottom="0dp"
-                                    android:background="@color/black_60p">
+                                    android:background="@color/black_30p">
 
                                     <TextView
                                         android:layout_width="match_parent"

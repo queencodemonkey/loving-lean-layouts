@@ -40,7 +40,7 @@ public enum Example {
             R.string.example_fixed_it);
 
     private static final Example[] EXAMPLES_ALL = {
-            HIERARCHY_VIEW, LINT_WARNINGS, ATTRIBUTES, SIMPLER_VIEWS, ON_THE_FLY};
+            HIERARCHY_VIEW, LINT_WARNINGS, ATTRIBUTES, SIMPLER_VIEWS, CUSTOM_VIEWS};
 
     //
     // Fields

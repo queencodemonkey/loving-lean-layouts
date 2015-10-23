@@ -26,6 +26,7 @@
     <dimen name="divider_margin_vertical">8dp</dimen>
 
     <!-- List metrics -->
+    <dimen name="list_margin_top">8dp</dimen>
     <dimen name="list_subheader_height_min">48dp</dimen>
     <dimen name="list_item_spacing">16dp</dimen>
     <dimen name="list_item_text_margin_start">12dp</dimen>
@@ -64,5 +65,9 @@
 
     <!-- On the Fly Example -->
     <dimen name="on_the_fly_text_margin">16dp</dimen>
+
+    <!-- Custom Views example -->
+    <dimen name="custom_view_icon_margin_start">16dp</dimen>
+    <dimen name="custom_view_icon_margin_end">20dp</dimen>
 
 </resources>

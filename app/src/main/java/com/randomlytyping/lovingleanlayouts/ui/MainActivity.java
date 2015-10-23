@@ -26,6 +26,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.randomlytyping.lovingleanlayouts.Example;
@@ -33,6 +34,7 @@ import com.randomlytyping.lovingleanlayouts.Intents;
 import com.randomlytyping.lovingleanlayouts.R;
 import com.randomlytyping.util.AppCompatActivitySetup;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity {
@@ -86,7 +88,9 @@ public class MainActivity extends BaseActivity {
         // Fields
         //
 
-        private TextView mTextView;
+        private ImageView mIconView;
+        private TextView mTitleView;
+        private TextView mSubtitleView;
         private Example mExample;
 
         //
@@ -103,16 +107,20 @@ public class MainActivity extends BaseActivity {
 
             mExample = Example.HIERARCHY_VIEW;
 
-            if (itemView instanceof TextView) {
-                mTextView = (TextView) itemView;
-                mTextView.setOnClickListener(this);
-            }
+            mIconView = ButterKnife.findById(itemView, R.id.icon);
+            mTitleView = ButterKnife.findById(itemView, R.id.title);
+            mSubtitleView = ButterKnife.findById(itemView, R.id.subtitle);
+
+            itemView.setOnClickListener(this);
         }
 
         void setExample(Example example) {
             this.mExample = example;
-            mTextView.setCompoundDrawablesWithIntrinsicBounds(example.iconResId, 0, 0, 0);
-            mTextView.setText(example.stringResId);
+            mIconView.setImageResource(example.iconResId);
+            mTitleView.setText(example.stringResId);
+            final String resourceEntryName = getResources().getResourceEntryName(example.resId);
+            mSubtitleView.setText(String.format(getString(R.string.custom_view_resource_id_format),
+                    resourceEntryName));
         }
 
         //

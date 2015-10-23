@@ -14,20 +14,14 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="@dimen/list_item_default_height_min"
-                android:paddingTop="@dimen/list_item_padding_vertical"
-                android:paddingBottom="@dimen/list_item_padding_vertical"
-                android:drawablePadding="@dimen/list_item_drawable_padding"
-                android:gravity="left|center_vertical"
-                android:background="?attr/selectableItemBackground"
-                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                tools:drawableStart="@drawable/ic_view_quilt_white_36dp"
-                tools:text="Example List Item"
-                tools:ignore="RtlHardcoded">
+<com.randomlytyping.lovingleanlayouts.widget.CustomListItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/list_item_padding_vertical"
+    android:paddingBottom="@dimen/list_item_padding_vertical"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
 
     <ImageView
         android:id="@+id/icon"
@@ -35,25 +29,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/custom_view_icon_margin_start"
         android:layout_marginEnd="@dimen/custom_view_icon_margin_end"
-        android:src="@drawable/ic_view_quilt_white_36dp"
         android:contentDescription="@null" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/icon"
-        tools:text="Example List Item"
         style="@style/TextAppearance.AppCompat.Subhead" />
 
     <TextView
         android:id="@+id/subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/icon"
-        android:layout_below="@id/title"
         style="@style/TextAppearance.AppCompat.Body1"
-        tools:text="R.id.rumble"
         android:textColor="?android:attr/textColorSecondary" />
 
-</RelativeLayout>
+</com.randomlytyping.lovingleanlayouts.widget.CustomListItem>

@@ -84,7 +84,7 @@ public class SimplerViewsActivity extends BaseActivity {
         builder.setSpan(new CalligraphyTypefaceSpan(typefaceB),
                 start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-        ButterKnife.<TextView>findById(this, R.id.simple_text)
-                .setText(builder, TextView.BufferType.SPANNABLE);
+        final TextView textView = ButterKnife.findById(this, R.id.simple_text);
+        textView.setText(builder, TextView.BufferType.SPANNABLE);
     }
 }

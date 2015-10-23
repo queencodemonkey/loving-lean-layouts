@@ -59,7 +59,7 @@
     <string name="view_attributes_simple">non-subjective</string>
 
     <!-- Lint Warnings -->
-    <string name="lint_useless_parent">Single View in a LinearLayout</string>
+    <string name="lint_useless_parent">Single View in a RelativeLayout</string>
     <string name="lint_useless_leaf_01">LinearLayout as a gap</string>
     <string name="lint_useless_leaf_02">Space widget</string>
     <string name="lint_nested_weights_01">Nested</string>
@@ -93,5 +93,5 @@
     <string name="on_the_fly_view_stub_01">We are the\nKnights Who Say… NI!</string>
 
     <!-- Custom views -->
-
+    <string name="custom_view_resource_id_format">R.id.%s</string>
 </resources>

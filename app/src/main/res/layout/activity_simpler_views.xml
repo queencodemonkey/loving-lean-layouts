@@ -107,10 +107,12 @@
 
                     <TextView
                         android:layout_width="@dimen/simpler_views_narrow_block_width"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
                         android:layout_marginTop="0dp"
                         android:layout_marginBottom="@dimen/simpler_views_text_gap"
                         android:text="@string/simpler_views_text_C00"
+                        android:background="@color/black_12p"
                         style="@style/TextAppearance.LLL.Monologue" />
 
                     <TextView
@@ -119,6 +121,7 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginBottom="@dimen/simpler_views_text_gap"
                         android:text="@string/simpler_views_text_C01"
+                        android:background="@color/black_30p"
                         style="@style/TextAppearance.LLL.Monologue" />
 
                 </LinearLayout>
@@ -129,6 +132,7 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
                     android:text="@string/simpler_views_text_C02"
+                    android:background="@android:color/black"
                     style="@style/TextAppearance.LLL.MonologueBig" />
 
             </LinearLayout>
@@ -150,6 +154,7 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
                     android:text="@string/simpler_views_text_C03"
+                    android:background="@color/black_12p"
                     style="@style/TextAppearance.LLL.Monologue" />
 
                 <TextView
@@ -159,6 +164,7 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
                     android:text="@string/simpler_views_text_C04"
+                    android:background="@color/black_30p"
                     style="@style/TextAppearance.LLL.Monologue" />
 
                 <TextView
@@ -168,6 +174,7 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
                     android:text="@string/simpler_views_text_C05"
+                    android:background="@android:color/black"
                     style="@style/TextAppearance.LLL.MonologueBig" />
 
             </RelativeLayout>
