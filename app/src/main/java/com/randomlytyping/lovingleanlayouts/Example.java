@@ -34,6 +34,8 @@ public enum Example {
             R.string.example_simpler_views),
     ON_THE_FLY(R.id.example_on_the_fly, R.drawable.ic_view_quilt_white_36dp,
             R.string.example_on_the_fly),
+    CUSTOM_VIEWS(R.id.example_custom_views,  R.drawable.ic_view_quilt_white_36dp,
+            R.string.example_custom_views),
     FIXED_IT(R.id.example_fixed_it, R.drawable.ic_view_quilt_white_36dp,
             R.string.example_fixed_it);
 

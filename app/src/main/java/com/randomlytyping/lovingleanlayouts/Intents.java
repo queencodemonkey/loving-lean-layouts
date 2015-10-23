@@ -22,6 +22,7 @@ import android.net.Uri;
 
 import com.randomlytyping.lovingleanlayouts.ui.AboutActivity;
 import com.randomlytyping.lovingleanlayouts.ui.AttributesActivity;
+import com.randomlytyping.lovingleanlayouts.ui.CustomViewsActivity;
 import com.randomlytyping.lovingleanlayouts.ui.HierarchyViewerActivity;
 import com.randomlytyping.lovingleanlayouts.ui.LintWarningsActivity;
 import com.randomlytyping.lovingleanlayouts.ui.OnTheFlyActivity;
@@ -47,6 +48,8 @@ public class Intents {
                 return new Intent(context, SimplerViewsActivity.class);
             case ON_THE_FLY:
                 return new Intent(context, OnTheFlyActivity.class);
+            case CUSTOM_VIEWS:
+                return new Intent(context, CustomViewsActivity.class);
             default:
                 return null;
         }

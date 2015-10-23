@@ -23,6 +23,7 @@
     <string name="activity_title_attributes">Use What You Got</string>
     <string name="activity_title_simpler_views">Simple Pleasures</string>
     <string name="activity_title_on_the_fly">On the Fly</string>
+    <string name="activity_title_custom_views">Sir, Please. Look. My Stuff Is Custom</string>
     <string name="activity_title_fixed_it">Fixed It!</string>
     <string name="activity_title_about">About</string>
 
@@ -33,6 +34,7 @@
     <string name="example_attributes">Using Attributes</string>
     <string name="example_simpler_views">Simpler Views</string>
     <string name="example_on_the_fly">On the Fly</string>
+    <string name="example_custom_views">Custom Views</string>
     <string name="example_fixed_it">On the Fly</string>
 
     <!-- About -->
@@ -83,9 +85,13 @@
     <string name="simpler_views_text_C03">Four shalt thou not count, neither count thou two, excepting that thou then proceed to three.</string>
     <string name="simpler_views_text_C04">Five is right out.</string>
     <string name="simpler_views_text_C05">Once the number three, being the third number, be reached, then lobbest thou thy Holy Hand Grenade of Antioch towards thy foe, who, being naughty in My sight, shall snuff it.</string>
+
+    <!-- On the Fly -->
     <string name="on_the_fly_inflate">Inflate</string>
     <string name="on_the_fly_who_are_you">Who Are You?</string>
     <string name="on_the_fly_view_inflate_02">There are some\nwho call me… Tim.</string>
     <string name="on_the_fly_view_stub_01">We are the\nKnights Who Say… NI!</string>
+
+    <!-- Custom views -->
 
 </resources>

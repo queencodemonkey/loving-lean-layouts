@@ -56,6 +56,11 @@
             android:parentActivityName=".ui.MainActivity"  />
 
         <activity
+            android:name=".ui.CustomViewsActivity"
+            android:label="@string/activity_title_custom_views"
+            android:parentActivityName=".ui.MainActivity"  />
+
+        <activity
             android:name=".ui.AboutActivity"
             android:label="@string/activity_title_about"
             android:parentActivityName=".ui.MainActivity"  />
