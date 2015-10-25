@@ -29,6 +29,13 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
+ * Custom {@link ViewGroup} for displaying the example list items from the launch screen but
+ * without the extra measure/layout pass from the {@link android.widget.RelativeLayout}.
+ *
+ * The {@link #measure(int, int)} and {@link #measureChildWithMargins(View, int, int, int, int)}
+ * logic was taken directly from Sriram Ramani's post on Custom ViewGroups:
+ * https://sriramramani.wordpress.com/2015/05/06/custom-viewgroups/
+ *
  * @since 2015.10.23
  */
 public class CustomListItem extends ViewGroup {
