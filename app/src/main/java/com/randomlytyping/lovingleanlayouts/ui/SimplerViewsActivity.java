@@ -49,11 +49,13 @@ public class SimplerViewsActivity extends BaseActivity {
                 .supportAppBar(R.id.app_bar)
                 .upButton();
 
+        //<editor-fold desc="Some Typeface Loading">
         final AssetManager assets = getAssets();
         final Typeface typefaceA =
                 TypefaceUtils.load(assets, getString(R.string.font_path_merriweather_regular));
         final Typeface typefaceB =
                 TypefaceUtils.load(assets, getString(R.string.font_path_clear_sans));
+        //</editor-fold>
 
         final SpannableStringBuilder builder =
                 new SpannableStringBuilder(getString(R.string.simpler_views_text_B02));
@@ -66,6 +68,7 @@ public class SimplerViewsActivity extends BaseActivity {
         builder.setSpan(new AlignmentSpan.Standard(Layout.Alignment.ALIGN_OPPOSITE),
                 start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
+        //<editor-fold desc="More Spannable Stuff…">
         start = end;
         builder.append("\n\n").append(getString(R.string.simpler_views_text_A03));
         end = builder.length();
@@ -83,6 +86,7 @@ public class SimplerViewsActivity extends BaseActivity {
                 start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         builder.setSpan(new CalligraphyTypefaceSpan(typefaceB),
                 start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        //</editor-fold>
 
         final TextView textView = ButterKnife.findById(this, R.id.simple_text);
         textView.setText(builder, TextView.BufferType.SPANNABLE);

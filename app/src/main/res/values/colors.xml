@@ -22,7 +22,11 @@
     <color name="grey_900">#212121</color>
     <color name="grey_900_26p">#42212121</color>
 
+    <color name="blue_light_900">#01579B</color>
+    <color name="orange_900">#E65100</color>
     <color name="pink_500">#E91E63</color>
+    <color name="purple_500">#673AB7</color>
+    <color name="yellow_800">#F9A825</color>
 
     <color name="black_12p">#1E000000</color>
     <color name="black_30p">#42000000</color>

@@ -135,6 +135,7 @@ public class CustomListItem extends ViewGroup {
     @Override
     protected void measureChildWithMargins(View child, int parentWidthMeasureSpec, int widthUsed,
                                            int parentHeightMeasureSpec, int heightUsed) {
+        //<editor-fold desc="More Measure Stuff">
         final MarginLayoutParams layoutParams = (MarginLayoutParams) child.getLayoutParams();
 
         int childWidthMeasureSpec = getChildMeasureSpec(
@@ -148,6 +149,7 @@ public class CustomListItem extends ViewGroup {
                 layoutParams.height);
 
         child.measure(childWidthMeasureSpec, childHeightMeasureSpec);
+        //</editor-fold>
     }
 
     @Override

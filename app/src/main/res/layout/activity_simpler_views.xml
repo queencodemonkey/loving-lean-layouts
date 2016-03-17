@@ -18,7 +18,8 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              tools:ignore="RtlHardcoded">
 
     <!-- App bar -->
     <include layout="@layout/app_bar_default" />
@@ -68,11 +69,14 @@
 
             </LinearLayout>
 
-            <FrameLayout
+            <RelativeLayout
+                android:id="@+id/i_am_just_a_divider"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginStart="@dimen/simpler_views_text_margin_horizontal"
                 android:layout_marginEnd="@dimen/simpler_views_text_margin_horizontal"
+                android:layout_marginTop="@dimen/simpler_views_versions_gap"
+                android:layout_marginBottom="@dimen/simpler_views_versions_gap"
                 android:background="@drawable/shape_divider_default" />
 
             <TextView
@@ -111,8 +115,9 @@
                         android:layout_weight="1"
                         android:layout_marginTop="0dp"
                         android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                        android:padding="@dimen/simpler_views_text_padding"
                         android:text="@string/simpler_views_text_C00"
-                        android:background="@color/black_12p"
+                        android:background="@color/purple_500"
                         style="@style/TextAppearance.LLL.Monologue" />
 
                     <TextView
@@ -120,8 +125,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
                         android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                        android:padding="@dimen/simpler_views_text_padding"
                         android:text="@string/simpler_views_text_C01"
-                        android:background="@color/black_30p"
+                        android:background="@color/blue_light_900"
                         style="@style/TextAppearance.LLL.Monologue" />
 
                 </LinearLayout>
@@ -131,8 +137,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                    android:padding="@dimen/simpler_views_text_padding"
                     android:text="@string/simpler_views_text_C02"
-                    android:background="@android:color/black"
+                    android:background="@color/orange_900"
                     style="@style/TextAppearance.LLL.MonologueBig" />
 
             </LinearLayout>
@@ -153,8 +160,9 @@
                     android:layout_marginEnd="@dimen/simpler_views_text_gap"
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                    android:padding="@dimen/simpler_views_text_padding"
                     android:text="@string/simpler_views_text_C03"
-                    android:background="@color/black_12p"
+                    android:background="@color/purple_500"
                     style="@style/TextAppearance.LLL.Monologue" />
 
                 <TextView
@@ -163,8 +171,9 @@
                     android:layout_below="@id/text_top_left"
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                    android:padding="@dimen/simpler_views_text_padding"
                     android:text="@string/simpler_views_text_C04"
-                    android:background="@color/black_30p"
+                    android:background="@color/blue_light_900"
                     style="@style/TextAppearance.LLL.Monologue" />
 
                 <TextView
@@ -173,8 +182,9 @@
                     android:layout_toEndOf="@id/text_top_left"
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                    android:padding="@dimen/simpler_views_text_padding"
                     android:text="@string/simpler_views_text_C05"
-                    android:background="@android:color/black"
+                    android:background="@color/orange_900"
                     style="@style/TextAppearance.LLL.MonologueBig" />
 
             </RelativeLayout>

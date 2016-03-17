@@ -13,58 +13,62 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.randomlytyping.lovingleanlayouts">
+-->
+<manifest package="com.randomlytyping.lovingleanlayouts"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ui.HierarchyViewerActivity"
             android:label="@string/activity_title_hierarchy_viewer"
-            android:parentActivityName=".ui.MainActivity" />
-
+            android:parentActivityName=".ui.MainActivity"
+            />
         <activity
             android:name=".ui.AttributesActivity"
             android:label="@string/activity_title_attributes"
-            android:parentActivityName=".ui.MainActivity"  />
-
+            android:parentActivityName=".ui.MainActivity"
+            />
         <activity
             android:name=".ui.LintWarningsActivity"
             android:label="@string/activity_title_lint_warnings"
-            android:parentActivityName=".ui.MainActivity"  />
-
+            android:parentActivityName=".ui.MainActivity"
+            />
         <activity
             android:name=".ui.SimplerViewsActivity"
             android:label="@string/activity_title_simpler_views"
-            android:parentActivityName=".ui.MainActivity"  />
-
+            android:parentActivityName=".ui.MainActivity"
+            />
         <activity
             android:name=".ui.OnTheFlyActivity"
             android:label="@string/activity_title_on_the_fly"
-            android:parentActivityName=".ui.MainActivity"  />
-
+            android:parentActivityName=".ui.MainActivity"
+            />
         <activity
             android:name=".ui.CustomViewsActivity"
             android:label="@string/activity_title_custom_views"
-            android:parentActivityName=".ui.MainActivity"  />
-
+            android:parentActivityName=".ui.MainActivity"
+            />
         <activity
             android:name=".ui.AboutActivity"
             android:label="@string/activity_title_about"
-            android:parentActivityName=".ui.MainActivity"  />
-
+            android:parentActivityName=".ui.MainActivity"
+            />
+        <activity android:name=".ui.EmptyActivity">
+        </activity>
     </application>
 
 </manifest>

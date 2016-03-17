@@ -21,12 +21,8 @@
                 android:minHeight="@dimen/list_item_default_height_min"
                 android:paddingTop="@dimen/list_item_padding_vertical"
                 android:paddingBottom="@dimen/list_item_padding_vertical"
-                android:drawablePadding="@dimen/list_item_drawable_padding"
                 android:gravity="left|center_vertical"
                 android:background="?attr/selectableItemBackground"
-                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                tools:drawableStart="@drawable/ic_view_quilt_white_36dp"
-                tools:text="Example List Item"
                 tools:ignore="RtlHardcoded">
 
     <ImageView

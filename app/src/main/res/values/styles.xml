@@ -61,19 +61,20 @@
         <item name="fontPath">@string/font_path_merriweather_black</item>
     </style>
 
-    <style name="TextAppearance.LLL.DialogueA" parent="TextAppearance.AppCompat.Body1">
+    <style name="TextAppearance.LLL.DialogueA" parent="TextAppearance.AppCompat.Headline">
         <item name="fontPath">@string/font_path_merriweather_regular</item>
     </style>
 
-    <style name="TextAppearance.LLL.DialogueB" parent="TextAppearance.AppCompat.Subhead">
+    <style name="TextAppearance.LLL.DialogueB" parent="TextAppearance.AppCompat.Headline">
         <item name="fontPath">@string/font_path_clear_sans</item>
+        <item name="android:textColor">@color/yellow_800</item>
     </style>
 
-    <style name="TextAppearance.LLL.Monologue" parent="TextAppearance.AppCompat.Body1">
+    <style name="TextAppearance.LLL.Monologue" parent="TextAppearance.AppCompat.Subhead">
         <item name="fontPath">@string/font_path_alegreya_regular</item>
     </style>
 
-    <style name="TextAppearance.LLL.MonologueBig" parent="TextAppearance.AppCompat.Body1">
+    <style name="TextAppearance.LLL.MonologueBig" parent="TextAppearance.AppCompat.Title">
         <item name="fontPath">@string/font_path_alegreya_black</item>
     </style>
 

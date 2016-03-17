@@ -61,7 +61,9 @@
     <dimen name="simpler_views_text_margin_horizontal">48dp</dimen>
     <dimen name="simpler_views_text_gap">16dp</dimen>
     <dimen name="simpler_views_text_margin_vertical">24dp</dimen>
+    <dimen name="simpler_views_versions_gap">32dp</dimen>
     <dimen name="simpler_views_narrow_block_width">112dp</dimen>
+    <dimen name="simpler_views_text_padding">8dp</dimen>
 
     <!-- On the Fly Example -->
     <dimen name="on_the_fly_text_margin">16dp</dimen>
