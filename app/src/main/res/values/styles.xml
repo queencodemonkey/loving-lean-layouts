@@ -61,11 +61,11 @@
         <item name="fontPath">@string/font_path_merriweather_black</item>
     </style>
 
-    <style name="TextAppearance.LLL.DialogueA" parent="TextAppearance.AppCompat.Headline">
+    <style name="TextAppearance.LLL.DialogueA" parent="TextAppearance.AppCompat.Large">
         <item name="fontPath">@string/font_path_merriweather_regular</item>
     </style>
 
-    <style name="TextAppearance.LLL.DialogueB" parent="TextAppearance.AppCompat.Headline">
+    <style name="TextAppearance.LLL.DialogueB" parent="TextAppearance.AppCompat.Large">
         <item name="fontPath">@string/font_path_clear_sans</item>
         <item name="android:textColor">@color/yellow_800</item>
     </style>
