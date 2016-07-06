@@ -16,6 +16,7 @@
   -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
@@ -144,7 +145,8 @@
 
             </LinearLayout>
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
@@ -156,38 +158,41 @@
                     android:id="@+id/text_top_left"
                     android:layout_width="@dimen/simpler_views_narrow_block_width"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginEnd="@dimen/simpler_views_text_gap"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginBottom="@dimen/simpler_views_text_gap"
                     android:padding="@dimen/simpler_views_text_padding"
                     android:text="@string/simpler_views_text_C03"
                     android:background="@color/purple_500"
-                    style="@style/TextAppearance.LLL.Monologue" />
+                    style="@style/TextAppearance.LLL.Monologue"
+                    app:layout_constraintLeft_toLeftOf="@+id/constraint"
+                    app:layout_constraintTop_toTopOf="@+id/constraint" />
 
                 <TextView
                     android:layout_width="@dimen/simpler_views_narrow_block_width"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/text_top_left"
-                    android:layout_marginTop="0dp"
+                    android:layout_marginTop="@dimen/simpler_views_text_gap"
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
                     android:padding="@dimen/simpler_views_text_padding"
                     android:text="@string/simpler_views_text_C04"
                     android:background="@color/blue_light_900"
-                    style="@style/TextAppearance.LLL.Monologue" />
+                    style="@style/TextAppearance.LLL.Monologue"
+                    app:layout_constraintLeft_toLeftOf="@+id/constraint"
+                    app:layout_constraintTop_toBottomOf="@+id/text_top_left" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@id/text_top_left"
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="@dimen/simpler_views_text_gap"
+                    android:layout_marginLeft="@dimen/simpler_views_text_gap"
+                    android:layout_marginRight="0dp"
                     android:padding="@dimen/simpler_views_text_padding"
                     android:text="@string/simpler_views_text_C05"
                     android:background="@color/orange_900"
-                    style="@style/TextAppearance.LLL.MonologueBig" />
+                    style="@style/TextAppearance.LLL.MonologueBig"
+                    app:layout_constraintLeft_toRightOf="@+id/text_top_left"
+                    app:layout_constraintRight_toRightOf="@+id/constraint"
+                    app:layout_constraintTop_toTopOf="@+id/constraint" />
 
-            </RelativeLayout>
+            </android.support.constraint.ConstraintLayout>
 
         </LinearLayout>
 
