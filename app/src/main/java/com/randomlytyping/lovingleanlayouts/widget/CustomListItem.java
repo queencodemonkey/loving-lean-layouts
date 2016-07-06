@@ -98,6 +98,7 @@ public class CustomListItem extends ViewGroup {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        //<editor-fold desc="~30 Lines of Measure Code…">
         int widthUsed = getPaddingLeft() + getPaddingRight();
         int heightUsed = getPaddingTop() + getPaddingBottom();
         int width = 0;
@@ -130,12 +131,13 @@ public class CustomListItem extends ViewGroup {
         setMeasuredDimension(
                 resolveSize(width + getPaddingLeft() + getPaddingRight(), widthMeasureSpec),
                 resolveSize(height + getPaddingTop() + getPaddingBottom(), heightMeasureSpec));
+        //</editor-fold>
     }
 
     @Override
     protected void measureChildWithMargins(View child, int parentWidthMeasureSpec, int widthUsed,
                                            int parentHeightMeasureSpec, int heightUsed) {
-        //<editor-fold desc="More Measure Stuff">
+        //<editor-fold desc="More Measure Stuff…">
         final MarginLayoutParams layoutParams = (MarginLayoutParams) child.getLayoutParams();
 
         int childWidthMeasureSpec = getChildMeasureSpec(
@@ -154,6 +156,7 @@ public class CustomListItem extends ViewGroup {
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        //<editor-fold desc="~21 Lines of Layout Code…">
         MarginLayoutParams layoutParams = (MarginLayoutParams) icon.getLayoutParams();
 
         int x = getPaddingLeft() + layoutParams.leftMargin;
@@ -174,5 +177,6 @@ public class CustomListItem extends ViewGroup {
 
         subtitleView.layout(x, y,
                 x + subtitleView.getMeasuredWidth(), y + subtitleView.getMeasuredHeight());
+        //</editor-fold>
     }
 }
