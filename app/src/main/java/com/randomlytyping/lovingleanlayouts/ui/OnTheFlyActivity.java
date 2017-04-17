@@ -26,7 +26,7 @@ import android.view.ViewStub;
 import com.randomlytyping.lovingleanlayouts.R;
 import com.randomlytyping.util.AppCompatActivitySetup;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -38,7 +38,7 @@ public class OnTheFlyActivity extends BaseActivity {
     // Fields
     //
 
-    @Bind(R.id.inflate_container)
+    @BindView(R.id.inflate_container)
     ViewGroup inflateContainer;
 
     private LayoutInflater mInflater;

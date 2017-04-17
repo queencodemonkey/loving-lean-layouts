@@ -25,7 +25,7 @@ import com.randomlytyping.lovingleanlayouts.R;
 import com.randomlytyping.util.AppCompatActivitySetup;
 import com.randomlytyping.util.AppCompatUtil;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -35,7 +35,7 @@ public class HierarchyViewerActivity extends BaseActivity {
     //
     // Fields
     //
-    @Bind(R.id.status_message)
+    @BindView(R.id.status_message)
     TextView statusTextView;
 
     //
@@ -46,9 +46,11 @@ public class HierarchyViewerActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hierarchy_viewer);
+
         AppCompatActivitySetup.with(this)
                 .supportAppBar(R.id.app_bar)
                 .upButton();
+
         ButterKnife.bind(this);
 
         statusTextView.setText(R.string.hierarchy_viewer_status_bar_message_sample);

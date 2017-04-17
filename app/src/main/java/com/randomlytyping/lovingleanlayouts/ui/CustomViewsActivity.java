@@ -30,7 +30,7 @@ import com.randomlytyping.lovingleanlayouts.Example;
 import com.randomlytyping.lovingleanlayouts.R;
 import com.randomlytyping.util.AppCompatActivitySetup;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -67,13 +67,13 @@ public class CustomViewsActivity extends BaseActivity {
         // Fields
         //
 
-        @Bind(R.id.icon)
+        @BindView(R.id.icon)
         ImageView mIconView;
 
-        @Bind(R.id.title)
+        @BindView(R.id.title)
         TextView mTitleView;
 
-        @Bind(R.id.subtitle)
+        @BindView(R.id.subtitle)
         TextView mSubtitleView;
 
         //

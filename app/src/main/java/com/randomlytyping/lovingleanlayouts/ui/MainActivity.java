@@ -34,7 +34,6 @@ import com.randomlytyping.lovingleanlayouts.Intents;
 import com.randomlytyping.lovingleanlayouts.R;
 import com.randomlytyping.util.AppCompatActivitySetup;
 
-import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity {

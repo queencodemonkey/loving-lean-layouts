@@ -25,7 +25,7 @@ import android.widget.TextView;
 
 import com.randomlytyping.lovingleanlayouts.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -43,13 +43,13 @@ public class CustomListItem extends ViewGroup {
     // Fields
     //
 
-    @Bind(R.id.icon)
+    @BindView(R.id.icon)
     ImageView icon;
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView titleView;
 
-    @Bind(R.id.subtitle)
+    @BindView(R.id.subtitle)
     TextView subtitleView;
 
     //
