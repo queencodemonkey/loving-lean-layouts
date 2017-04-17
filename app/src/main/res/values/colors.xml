@@ -28,7 +28,6 @@
     <color name="purple_500">#673AB7</color>
     <color name="yellow_800">#F9A825</color>
 
-    <color name="black_12p">#1E000000</color>
     <color name="black_30p">#42000000</color>
     <color name="white_12p">#1FFFFFFF</color>
 </resources>

@@ -250,7 +250,6 @@
                     android:layout_weight="1">
 
                     <ImageView
-                        android:id="@+id/row01_start_image"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="2"
@@ -261,7 +260,6 @@
                         android:contentDescription="@null" />
 
                     <ImageView
-                        android:id="@+id/row01_end_image"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="1"
@@ -280,7 +278,6 @@
                     android:layout_marginBottom="0dp">
 
                     <ImageView
-                        android:id="@+id/row02_start_image"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="1"
@@ -291,7 +288,6 @@
                         android:contentDescription="@null" />
 
                     <ImageView
-                        android:id="@+id/row02_end_image"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="1"
@@ -310,7 +306,6 @@
                     android:layout_marginBottom="0dp">
 
                     <ImageView
-                        android:id="@+id/row03_start_image"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="1"
@@ -367,7 +362,6 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:id="@+id/row03_end_image"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="1"
@@ -386,7 +380,6 @@
                     android:layout_marginBottom="0dp">
 
                     <ImageView
-                        android:id="@+id/row04_start_image"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="2"
@@ -397,7 +390,6 @@
                         android:contentDescription="@null" />
 
                     <ImageView
-                        android:id="@+id/row04_center_image"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="2"
@@ -408,7 +400,6 @@
                         android:contentDescription="@null" />
 
                     <ImageView
-                        android:id="@+id/row04_end_image"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/hierarchy_viewer_image_height"
                         android:layout_weight="1"

@@ -92,8 +92,5 @@
     </style>
 
     <!-- List item -->
-    <style name="ListItemExample">
-        <item name="android:drawablePadding">@dimen/activity_vertical_margin</item>
-    </style>
 
 </resources>
