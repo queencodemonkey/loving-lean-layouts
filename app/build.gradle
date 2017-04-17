@@ -1,10 +1,12 @@
 apply plugin: 'com.android.application'
 
 ext.versions = [
-        support: "24.0.0",
-        constraintlayout: "1.0.0-alpha3",
-        butterknife: "7.0.1",
-        calligraphy: "2.1.0"
+        buildtools      : "25.0.2",
+        butterknife     : "8.5.1",
+        support         : "25.3.1",
+        calligraphy     : "2.2.0",
+        constraintlayout: "1.0.2",
+        timber          : "4.5.1"
 ]
 
 def versionMajor = 1
@@ -13,13 +15,13 @@ def versionPatch = 0
 def versionBuild = 0
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '24 rc1'
+    compileSdkVersion 25
+    buildToolsVersion "${versions.buildtools}"
 
     defaultConfig {
         applicationId "com.randomlytyping.lovingleanlayouts"
         minSdkVersion 17
-        targetSdkVersion 24
+        targetSdkVersion 25
         versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
         versionName "${versionMajor}.${versionMinor}.${versionPatch}"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -47,6 +49,9 @@ dependencies {
 
     // UI
     compile "uk.co.chrisjenx:calligraphy:${versions.calligraphy}"
+
+    // Logging
+    compile "com.jakewharton.timber:timber:${versions.timber}"
 
     // Testing
     testCompile 'junit:junit:4.12'
