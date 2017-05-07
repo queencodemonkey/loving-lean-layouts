@@ -67,8 +67,6 @@
             android:label="@string/activity_title_about"
             android:parentActivityName=".ui.MainActivity"
             />
-        <activity android:name=".ui.EmptyActivity">
-        </activity>
     </application>
 
 </manifest>
