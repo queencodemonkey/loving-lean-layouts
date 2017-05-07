@@ -20,7 +20,7 @@ android {
 
     defaultConfig {
         applicationId "com.randomlytyping.lovingleanlayouts"
-        minSdkVersion 17
+        minSdkVersion 19
         targetSdkVersion 25
         versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
         versionName "${versionMajor}.${versionMinor}.${versionPatch}"
@@ -46,6 +46,7 @@ dependencies {
 
     // Utility
     compile "com.jakewharton:butterknife:${versions.butterknife}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${versions.butterknife}"
 
     // UI
     compile "uk.co.chrisjenx:calligraphy:${versions.calligraphy}"
@@ -54,8 +55,8 @@ dependencies {
     compile "com.jakewharton.timber:timber:${versions.timber}"
 
     // Testing
+    androidTestCompile "com.android.support:support-annotations:${versions.support}"
     testCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
     androidTestCompile 'com.android.support.test:runner:0.5'
-    androidTestCompile "com.android.support:support-annotations:${versions.support}"
 }
